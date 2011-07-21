@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  original_file: MyString
+  file: MyString
+  name: MyString
+  locale: MyString
+  original: false
+  organization_id: 1
+
+two:
+  original_file: MyString
+  file: MyString
+  name: MyString
+  locale: MyString
+  original: false
+  organization_id: 1

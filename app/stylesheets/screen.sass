@@ -1,0 +1,86 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset
+// To configure blueprint, edit the partials/base file.
+@import partials/base
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+// Import the non-default scaffolding module.
+@import blueprint/scaffolding
+@import blueprint/buttons
+@import compass/reset
+@import compass/utilities
+@import compass/layout
+@import blueprint
+
+
+@import blueprint/form
+@import compass/css3
+
+	
+@import compass/utilities/tables
+
+
+form
+  +blueprint-form
+  +blueprint-scaffolding
+a.button , button
+  +button-button
+  +button-hover-colors
+  +button-colors
+.button_nav
+  width: 100px
+  display: block
+  
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  table 
+    $table-color: #7a98c6
+    @include table-scaffolding
+    @include inner-table-borders(1px, darken($table-color, 40%))
+    @include outer-table-borders(2px)
+    @include alternating-rows-and-columns($table-color, adjust-hue($table-color, -120deg), #222222) 
+  #container
+    +container
+  #header, #footer
+    width: 100%
+    display: block
+    height: 60px
+    margin-bottom: 10px
+    background: #555
+    #logo
+      float: left
+      display: block
+      width: 100px
+      height: 60px
+      color: #fff
+      h1
+        color: #fff
+        padding: 0px 20px
+        line-height: 60px
+        font-size: 30px
+      
+  #flash
+    width: 940px
+    display: block
+    position: fixed 
+    top: 0
+  #sidebar
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor(5)
+    +column($sidebar-columns)
+    display: block
+    min-height: 300px
+  #content
+    display: block
+    min-height: 300px
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    $content-columns: ceil(19)
+    // true means it's the last column in the row
+    +column($content-columns, true)
+
+

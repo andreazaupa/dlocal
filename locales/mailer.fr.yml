@@ -1,0 +1,21 @@
+fr:
+  mailer:
+    signup_notification:
+      subject: "BFT.com - user and password creation"
+    confirm_notification:
+      subject: "BFT.com - user confirmed"
+    registered_users_digest:
+      subject: "BFT.com - users to be confirmed on %{date}"
+    reload_notification:
+      price_list:
+        subject: "Data catalogue reload"
+        text: "Data catalogue reload was made. The operation report can be found below:"
+      special_item:
+        subject: "Special item reload"
+        text: "Special item reload was made. The operation report can be found below:"
+      menu_item:
+        subject: "Menu' item reload"
+        text: "Menu' item reload was made. The operation report can be found below:"
+      country_group:
+        subject: "Country group reload"
+        text: "Country groups reload was made. The operation report can be found below:"

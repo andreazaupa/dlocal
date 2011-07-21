@@ -1,0 +1,55 @@
+development:
+  rules_server: 'http://127.0.0.1:8080/bft-drools'
+  #rules_server: 'http://192.168.254.97:8080/bft-drools'
+  dtools_server: 'http://altavilla.dtools.develon.com'
+  pdf_key: '58JV4bduVoDe8EycutHZcBqfb'
+  domain: 'localhost'
+  analytics: 'UA-15249748-1'
+  notification_receiver: 'fabio.segalla@develon.com'
+  notification_receiver_pconf_corrupted: 'fabio.segalla@develon.com'
+
+test:
+  rules_server: 'http://192.168.2.85:8080/bft-drools'
+  dtools_server: 'http://dtools.develon.com'
+  pdf_key: 'test'
+  domain: ''
+  analytics: 'UA-15249748-1'
+  notification_receiver: 'fabio.segalla@develon.com'
+  notification_receiver_pconf_corrupted: 'fabio.segalla@develon.com'
+ 
+development2:
+  rules_server: 'http://192.168.254.97:8080/bft-drools'
+  dtools_server: 'http://dtools.develon.com'
+  pdf_key: 'PKqPOdEa3KeT995ctT83Q3e05'
+  domain: 'bftconfigurator.lab.develon.com'
+  analytics: 'UA-15249748-1'
+  notification_receiver: ['ilenia.trevisan@develon.com', 'fabio.segalla@develon.com', 'marco.sanson@develon.com']
+  notification_receiver_pconf_corrupted: 'fabio.segalla@develon.com' 
+
+
+staging:
+  rules_server: 'http://192.168.254.97:8080/bft-drools'
+  dtools_server: 'http://dtools.develon.com'
+  pdf_key: 'PKqPOdEa3KeT995ctT83Q3e05'
+  domain: 'bftconfigurator.lab.develon.com'
+  analytics: 'UA-15249748-1'
+  notification_receiver: ['ilenia.trevisan@develon.com', 'fabio.segalla@develon.com', 'marco.sanson@develon.com']
+  notification_receiver_pconf_corrupted: 'fabio.segalla@develon.com'
+
+prestaging:
+  rules_server: 'http://192.168.2.85:8080/bft-drools'
+  dtools_server: 'http://dtools.altavilla.develon.com'
+  pdf_key: '58JV4bduVoDe8EycutHZcBqfb'
+  domain: 'bft.altavilla.develon.com'
+  analytics: 'UA-15249748-1'
+  notification_receiver: 'fabio.segalla@develon.com'
+  notification_receiver_pconf_corrupted: 'fabio.segalla@develon.com'
+
+production:
+  rules_server: 'http://192.168.254.83:8080/bft-drools-prod'
+  dtools_server: 'http://dtools.develon.com'
+  pdf_key: 'BEtcoFmvaXmJRiJbjQUeiDotp'
+  domain: 'www.configuratore.bft.it'
+  analytics: 'UA-15249748-2'
+  notification_receiver: ['ilenia.trevisan@develon.com', 'fabio.segalla@develon.com', 'marco.sanson@develon.com']
+  notification_receiver_pconf_corrupted: ['ilenia.trevisan@develon.com', 'fabio.segalla@develon.com', 'marco.sanson@develon.com', 'giorgio.dalmaso@develon.com', 'fabio.melen@develon.com']

@@ -1,0 +1,155 @@
+es:
+  um:
+    m: "m"
+    m_ext: "m"
+    mm: "mm"
+    mm_ext: "mm"
+    giri: "giri"
+    giri_ext: ""
+    kg: "kg"
+    kg_ext: "kg"
+    gradi: "°"
+    gradi_ext: "degree"
+    number: "n."
+    number_ext: ""
+  number:
+    format:
+      separator: ","
+      delimiter: "."
+      precision: 3
+    currency:
+      format:
+        format: "%n %u"
+        unit: "&euro;"
+        separator: ","
+        delimiter: "."
+        precision: 2
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Byte"
+          kb: "Kb"
+          mb: "Mb"
+          gb: "Gb"
+          tb: "Tb"
+  date:
+    formats:
+      date_picker: "%m/%d/%Y"
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+    day_names:  [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names:  [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+    month_names:  [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    abbr_month_names:  [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    order: [ :day, :month, :year ]
+  time:
+    formats:
+      default: "%a %d %b %Y, %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%d %B %Y %H:%M"
+      proposal: "%d/%m/%y"
+      proposal_long: "%d %B %Y"
+      tech_info: "%d/%m/%y"
+      tech_info_long: "%d.%m.%Y"
+  
+    am: 'am'
+    pm: 'pm'
+  datetime:
+    distance_in_words:
+      half_a_minute: "half a minute"
+      less_than_x_seconds:
+        one: "less than a second"
+        other: "less than %{count} seconds"
+      x_seconds:
+        one: "1 second"
+        other: "%{count} seconds"
+      less_than_x_minutes:
+        one: "less than a minute"
+        other: "less than %{count} minutes"
+      x_minutes:
+        one: "1 minute"
+        other: "%{count} minutes"
+      about_x_hours:
+        one: "about one hour"
+        other: "about %{count} hours"
+      x_days:
+        one: "1 day"
+        other: "%{count} days"
+      about_x_months:
+        one: "about one month"
+        other: "about %{count} months"
+      x_months:
+        one: "1 month"
+        other: "%{count} months"
+      about_x_years:
+        one: "about one year"
+        other: "about %{count} years"
+      over_x_years:
+        one: "more than one year"
+        other: "more than %{count} years"
+    prompts:
+      year: "Year"
+      month: "Month"
+      day: "Day"
+      hour: "Hour"
+      minute: "Minute"
+      second: "Seconds"
+  support:
+    array:
+      words_connector: ","
+      two_words_connector: " and"
+      last_word_connector: ", and"
+  buttons:
+      back: "Back"
+      change_password: "Change password"
+      confirm: "Confirm"
+      delete: "Delete"
+      edit: "Change"
+      new: "New"
+      next: "Forward"
+      search: "Find"
+      delete: "Delete"
+      details: "Details"
+      proposals_area: "Offers area"
+      pictures_area: "Pictures area"
+      installations_area: "Certification area"
+      new_proposal: "New Offer"
+      new_picture: "New Picture"
+      new_installation: "New certification"
+      checklist: "Survey sheets"
+      customers: "customers list"
+      products: "Free search"
+      backtohome: "Home"
+      backtoinstallation: "Back to details"
+      backtocustomer: "Back to customer"
+      newcustomer: "New customer"
+      freeview: "Free view"
+      exportpdf: "Pdf export"
+      pickinglist: "Picking list"
+      save: "Save"
+      cancel: "Cancel"
+      open: "Open"
+      declare_targets: "Target manager"
+      print_target_module: "Print module"
+      print_target_summary: "Print summary"
+      leonardo: "Leonardo CE"
+  errors:
+    must_be_integer: "Must be an integer"
+    must_be_float: "Must be a number"
+    must_not_be_zero: "Must not be zero"
+    not_parsable_date: "Incorrect date format"
+    transaction:
+      proposal_conf: "The proposal cannot be changed from \"%{from}\" to \"%{to}|\""
