@@ -1,0 +1,49 @@
+it:
+  devise:
+    accounts:
+        new:
+            new_account: 'Registrati'
+            suggestion: 'Clicca qui per registrarti come nuovo utente per il configuratore'
+            new_user: 'Nuovo utente'
+            step1: 'Crea un nuovo account (step1)'
+            step2: 'Crea un nuovo account (step2)'
+            step3: 'Crea un nuovo account (step3)'
+    sessions:
+      link: 'Accedi'
+      login: 'Accesso'
+      reset: "CANCELLA"
+      signed_in: 'Accesso effettuato.'
+      signed_out: 'Logout eseguito con successo.'
+      unauthenticated: "E' necessario effettuare l'accesso prima di continuare"
+      unconfirmed: 'Devi confermare il tuo account prima di continuare.'
+      locked: "Il tuo account e' bloccato"
+      invalid: 'Email o password invalide.'
+      timeout: "La sessione e' scaduta, effettua l'accesso nuovamente per continuare."
+      inactive: "Il tuo account non e' stato ancora attivato"
+      remember_me: "Ricordami"
+      suggestion: "Inserisci login e password per accedere al configuratore"
+    passwords:
+      link: 'Password dimenticata?'
+      send_instructions: 'Riceverai un email con le istruzioni su come resettare la tua password entro pochi minuti.'
+      updated: "La tua password e' stata correttamente cambiata. Accesso effettuato."
+      change: 'Cambia password'
+      suggestion: 'Inserisci la tua email e riceverai un link dove potrai cambiare la tua password'
+    confirmations:
+      link: "Non hai ricevuto le istruzioni di conferma?"
+      registered: "Registrazione completata"
+      send_instructions: 'Riceverai un email con le istruzioni su come confermare il tuo account entro pochi minuti.'
+      confirmed: "Il tuo account e' stato correttamente confermato. Accesso effettuato."
+    unlocks:
+      link: "Non hai ricevuto le istruzioni di sblocco?"
+      send_instructions: 'Riceverai un email con le istruzioni su come sbloccare il tuo account entro pochi minuti.'
+      unlocked: "Il tuo account e' stato correttamente sbloccato. Accesso effettuato."
+    mailer:
+      price_list_notification: 'Importazione listino'
+      confirmation_instructions: 'Istruzioni di conferma'
+      reset_password_instructions: 'BFT.com - Istruzioni di cambio password'
+      unlock_instructions: 'Istruzioni di sblocco'
+      confirm_your_account: 'Conferma il tuo account.'
+      confirm_your_account_by_link: 'Puoi confermare il tuo account tramite il link seguente:'
+      request_cange_password: "E' stato richiesto il cambiamento della password, utilizza il link seguente:"
+      ignore_this_mail: "Se non hai richiesto il cambio password, ignora questa email."
+      password_change_until: "La tua password non sara' cambiata finche' non eseguirete l'accesso al link qui sopra e non ne verra' creata una nuova."

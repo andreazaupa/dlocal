@@ -1,0 +1,491 @@
+fr:
+  formtastic:
+    :yes: 'Yes'
+    :no: 'No'
+    create: "Create"
+    update: "Update"
+    save: "Save"
+    submit: "Send"
+    required: "Required"
+    attach: 'Attach'
+    select_file: 'Select file'
+    labels:
+      display_name: "Customer"
+      proposal_conf:
+        use: "Use"
+        use_values:
+          semi-intensivo: "Semi-intensive"
+          intensivo: "Intensive"
+          molto_intensivo: "Very intensive"
+        use_hint: "Select the type of use"
+
+        gatewidth: "Gate width"
+        gatewidth_hint: "Enter the width"
+
+        slidingcapacity: "Gate weight"
+        slidingcapacity_hint: "Enter the weight"
+
+        slidinggatetype: "Type of gate"
+        slidinggatetype_values:
+          autoportante: "Self-supporting"
+          rotaia: "Track"
+        slidinggatetype_hint: "Select the type of sliding gate"
+
+        limitswitch: "Type of limit switch"
+        limitswitch_values:
+          elettromeccanico: "Electromechanical"
+          induttivo: "Inductive"
+        limitswitch_hint: "Select the type of limit switch"
+
+        swinggatetype: "1 or 2 leaves"
+        swinggatetype_values:
+          singola_anta: "Single leaf"
+          doppia_anta: "Double leaf"
+        swinggatetype_hint: "Please specify if the gate has one or two leaves"
+
+        swinglenght: "Length of the leaf"
+        swinglenght_hint: "Enter the length of the single leaf"
+
+        swingcapacity: "Weight of the leaf"
+        swingcapacity_hint: "Enter the weight of the single leaf"
+
+        slope: "Slope"
+        slope_values:
+          "0": "None"
+          "5": "Up to 5%"
+          "10": "Up to 10%"
+          "15": "Up tp 15%"
+          "16": "More than 15%"
+        slope_hint: "Enter the slope angle of the gate"
+
+        angle: "Opening angle"
+        angle_hint: "Enter the maximum opening angle "
+
+        operator: "Type of operator"
+        operator_values:
+          pistone: "Piston"
+          interrato: "Underground"
+          braccio_articolato: "Articulated arm"
+        operator_hint: "Select the desired type of operator"
+
+        unlockside: "Right or left leaf"
+        unlockside_values:
+          destra: "Right"
+          sinistra: "Left"
+        unlockside_hint: "Select the opening direction of the gate (viewed from inside the property)"
+
+        distancefromwallunder: "Cp - Lower hinge - post distance"
+        distancefromwallunder_hint: "Enter the distance between the centre of the lower hinge and the gate post"
+
+        heightfromgroundunder: "Cg - Leaf - ground distance"
+        heightfromgroundunder_hint: "Enter the distance between the gate and the ground"
+
+        distancefromwallpiston: "O - Hinge - post cross distance"
+        distancefromwallpiston_hint: "Enter the distance between the centre of the hinge and the leaf post"
+
+        distancefrominsideanglepiston: "X - Hinge - post longitudinal distance"
+        distancefrominsideanglepiston_hint: "Enter the distance between the centre of the hinge and the internal side of the leaf post"
+
+        widthsidepivotpiston: "Dp - Depth of the post"
+        widthsidepivotpiston_hint: "Enter the depth of the leaf post"
+
+        widthsideinsidepiston: "Wp - Width of the post"
+        widthsideinsidepiston_hint: "Enter the width of the leaf post"
+
+        distancefromwallarm: "O - Hinge - post cross distance"
+        distancefromwallarm_hint: "Enter the distance between the centre of the hinge and the leaf post"
+
+        distancefrominsideanglearm: "X - Hinge - post longitudinal distance"
+        distancefrominsideanglearm_hint: "Enter the distance between the centre of the hinge and the internal side of the leaf post"
+
+        lateralinsidespace: "Ca - Arm movement area"
+        lateralinsidespace_hint: "Enter the distance between the end of the post and possible side obstacles"
+
+        widthsideinsidearm: "Wp - Post width"
+        widthsideinsidearm_hint: "Enter the width of the leaf post"
+
+        automaticdoorwidth: "Cmax - Maximum clear opening width "
+        automaticdoorwidth_hint: "Enter the maximum width of the clear opening"
+
+        automaticdoorsusefulpassage: "UP - Desired clear opening width"
+        automaticdoorsusefulpassage_hint: "Enter the desired width of the clear opening "
+
+        spaceright: "Orh - Space to the right"
+        spaceright_hint: "Enter the width of the clear opening space to the right"
+
+        spaceleft: "Olh - Space to the left"
+        spaceleft_hint: "Enter the width of the clear opening space to the left"
+
+        glassweight: "Weight of the leaf"
+        glassweight_hint: "Enter the weight of the leaf. In case of double door, enter the weight of the single leaf"
+
+        automaticdoortype: "Type of door"
+        automaticdoortype_values:
+          intelaiata: "Framed"
+          in_vetro: "Glass"
+        automaticdoortype_hint: "Select the type of door"
+
+        grabsize: "Glass thickness"
+        grabsize_values:
+          "10": "10 mm"
+          "12": "12 mm"
+        grabsize_hint: "Select the thickness of the glass"
+
+        labelinterni: "Internal openings"
+        labelesterni: "External openings"
+
+        labelinterni2: "Internal openings"
+        labelesterni2: "External openings"
+
+        intsinglepassage: "One-way inward"
+        intsinglepassage_hint: "Enter the number of one-way openings with entrance to an indoor area "
+
+        intdoublepassage: "Two-way inward"
+        intdoublepassage_hint: "Enter the number of two-way openings with entrance to an indoor area "
+
+        intdoublecontrolledpassage: "Two-way inward with controlled access"
+        intdoublecontrolledpassage_hint: "Enter the number of two-way openings with entrance to an indoor area, where you wish to apply an access control system (anti-passback)"
+
+        extsinglepassage: "One-way outward"
+        extsinglepassage_hint: "Enter the number of one-way outdoor openings "
+
+        extdoublepassage: "Two-way outward"
+        extdoublepassage_hint: "Enter the number of two-way outdoor openings "
+
+        extdoublecontrolledpassage: "Two-way outward with controlled access"
+        extdoublecontrolledpassage_hint: "Enter the number of two-way outdoor openings, where you wish to apply an access control system (anti-passback)"
+
+        bftreceiverpresence: "Openings managed by CLONIX BFT receivers"
+        bftreceiverpresence_values:
+            "si": "Yes"
+            "no": "No"
+        bftreceiverpresence_hint: "Specify if the openings are managed by CLONIX or RTD BFT receivers"
+
+        roadbarriersusefulpassage: "UP - Clear opening"
+        roadbarriersusefulpassage_hint: "Enter the desired clear opening (from the tip of the boom to the beginning of the enclosure)"
+
+        bondedheight: "Ceiling"
+        bondedheight_values:
+            "si": "Yes"
+            "no": "No"
+        bondedheight_hint: "Specify if the height available has a ceiling on top"
+
+        availableheight: "Hc - Available height"
+        availableheight_hint: "Enter the height available "
+
+        garagedoorheight: "Door height"
+        garagedoorheight_hint: "Enter the height of the door"
+
+        garagedoorwidth: "Door width"
+        garagedoorwidth_hint: "Enter the width of the door"
+
+        garagetype: "Type of door"
+        garagetype_values:
+          sezionale: "Sectional"
+          basculante: "Overhead door"
+        garagetype_hint: "Select the type of door"
+
+        sezinstallationposition: "Horizontal or vertical door"
+        sezinstallationposition_values:
+          laterale: "Horizontal"
+          a_soffitto: "Vertical"
+        sezinstallationposition_hint: "Specify if the door is horizontal or vertical"
+
+        spaceceilingdoor: "Cs - Ceiling - door distance"
+        spaceceilingdoor_hint: "Enter the vertical distance between ceiling and door"
+
+        spaceinstallation: "Cp - Horizontal space available at the door's end"
+        spaceinstallation_hint: "Enter the working distance for installation between the door and the end of the garage or a possible obstacle on the ceiling"
+
+        counterweighttype: "Type of overhead door"
+        counterweighttype_values:
+          debordante: "Protruding"
+          non_debordante: "Non protruding"
+          pieghevole: "Folding"
+        counterweighttype_hint: "Specify the type of overhead door"
+
+        pedestriandoor: "Presence of a pedestrian door"
+        pedestriandoor_values:
+            "si": "Yes"
+            "no": "No"
+        pedestriandoor_hint: "Specify if there is a pedestrian door"
+
+        cwinstallationposition: "Motor position"
+        cwinstallationposition_values:
+          centrale: "Central"
+          laterale: "Side"
+        cwinstallationposition_hint: "Specify the installation position of the motor"
+
+        freelight: "Ca - Clear span on door side"
+        freelight_hint: "Enter the working width for the driving arm on the door side"
+
+        suppanelheight: "Hb - Upper panel height"
+        suppanelheight_hint: "Panel height"
+
+        outsideheight: "Hd - Protruding door height"
+        outsideheight_hint: "Enter the height of the protruding part of the door"
+
+        rollupcapacity: "Weight of the roll-up door"
+        rollupcapacity_values: 
+            "180": "180 Kg"
+            "200": "200 Kg"
+            "220": "220 Kg"
+        rollupcapacity_hint: "Enter the weight of the roll-up door"
+
+        shaftdiameter: "Ds - Shaft diameter"
+        shaftdiameter_values:
+            "42": "42 mm"
+            "48": "48 mm"
+            "60": "60 mm"
+        shaftdiameter_hint: "Specify the diameter of the roll-up door shaft "
+
+        pulleydiameter: "Dp - Pulley diameter"
+        pulleydiameter_values:
+            "200": "200 mm"
+            "220": "220 mm"
+        pulleydiameter_hint: "Specify the diameter of the roll-up door pulleys"
+
+        industrialdoortype: "Type of door"
+        industrialdoortype_values:
+          a_libro: "Folding"
+          sezionale: "Sectional"
+        industrialdoortype_hint: "Select the type of door"
+
+        doornumber: "Number of leaves"
+        doornumber_values:
+          1_anta: "1 leaf"
+          2_ante: "Double leaf"
+        doornumber_hint: "Select the number of leaves"
+
+        panelwidth: "Panel width"
+        panelwidth_hint: "Enter the width of the panel"
+
+        panelheight: "Panel height"
+        panelheight_hint: "Enter the height of the panel"
+
+        industrialdoorwidth: "Door width"
+        industrialdoorwidth_hint: "Enter the width of the door"
+
+        industrialdoorheight: "Door height"
+        industrialdoorheight_hint: "Enter the height of the door"
+
+        shaftrpm: "Number of door shaft revolutions"
+        shaftrpm_hint: "Enter the number of total shaft revolutions for complete door opening"
+
+        shaftheight: "Hs - Door shaft height"
+        shaftheight_hint: "Enter the height of the door shaft from ground"
+
+        singleaccess: "Number of one-way openings (proximity board)"
+        singleaccess_hint: "Enter the number of one-way openings with remote control through proximity board"
+
+        doubleaccess: "Number of two-way openings (proximity board)"
+        doubleaccess_hint: "Enter the number of two-way openings with remote control through proximity board"
+
+        doublecontrolaccess: "Number of two-way controlled openings (anti-passback) (proximity board)"
+        doublecontrolaccess_hint: "Enter the number of two-way openings with control through proximity board and with access control system (anti-passback)"
+
+        remotecontrol: "Openings with radio access (remote controls)"
+        remotecontrol_values:
+            "si": "Yes"
+            "no": "No"
+        remotecontrol_hint: "Specify if any openings are controlled by radio devices (remote controls)"
+
+        passagenumber: "Number of radio openings (remote controls)"
+        passagenumber_hint: "Enter the number of openings with radio control (remote controls)"
+
+        transponder: "Openings with hands-free device"
+        transponder_values:
+            "si": "Yes"
+            "no": "No"
+        transponder_hint: "Specify if any openings are controlled by hands-free access devices "
+
+        inttranspsingleaccess: "One-way inward"
+        inttranspsingleaccess_hint: "Enter the number of one-way openings with hands-free control and entrance to an indoor area "
+
+        inttranspdoubleaccess: "Two-way inward"
+        inttranspdoubleaccess_hint: "Enter the number of two-way openings with hands-free control and entrance to an indoor area "
+
+        inttranspdoublecontrolaccess: "Two-way inward with controlled access"
+        inttranspdoublecontrolaccess_hint: "Enter the number of two-way openings with hands-free control and entrance to an indoor area where you wish to apply an access control system (anti-passback)"
+
+        exttranspsingleaccess: "One-way outward"
+        exttranspsingleaccess_hint: "Enter the number of one-way outdoor openings with hands-free control"
+
+        exttranspdoubleaccess: "Two-way outward"
+        exttranspdoubleaccess_hint: "Enter the number of two-way outdoor openings with hands-free control"
+
+        exttranspdoublecontrolaccess: "Two-way outward with controlled access (anti-passback)"
+        exttranspdoublecontrolaccess_hint: "Enter the number of two-way outdoor openings with hands-free control, where you wish to apply an access control system (anti-passback)"
+
+        column10mt: "Bollards with cable between 0 and 10 m"
+        column10mt_hint: "Enter the number of bollards requiring a cable shorter than 10 metres"
+
+        column25mt: "Bollards with 10 to 25 m long cables"
+        column25mt_hint: "Enter the number of bollards requiring 10 to 25 m long cables"
+
+        column50mt: "Bollards with 25 to 50 m long cables"
+        column50mt_hint: "Enter the number of bollards requiring 25 to 50 m long cables"
+
+        question_image_hint: "Hover over the image to zoom"
+
+        increasecablemessage: "Please remember when ordering products to write beside each increase cable the STOPPY type which refers"
+        centralizedmessage: "Warning: The configurator provides assistance in the compositions of centralized systems, for autonomous systems for stand-alone use free selection. The total length of cable that connecting all devices can not exceed 500 m."
+        barriersmessage: "Warning: The proper balance of the barrier choice in relation to expected useful passage depends to bar selected and accessory installed. Suggested items are needed. If an article suggested is not Vs rating, to deselect may need to choose another bar or another barrier."
+        automaticdoorssmessage: "Can only be installed indoors or protected room (IP degree X0)"
+
+        not-viable-message:
+          only_lateral: "The gate width  is greater than 3.6 m. You can't do an installation with a single central engine of this configuration."
+          only_lateral_installation: "You can't do central installation if I have only operations that requiring two motors. Allows choosing lateral installation."
+          no_operator: "There are no operators that match your configuration. Try changing the answers to questions."
+          passage_exceed: "The maximum passage number managed is 31."
+          distance_pillar_pivot_too_high: "The distance from the inside of the hinge of the door pillar is too large (> 25 mm)"
+          error:
+            no_selected_operator: "Select at least one operator to complete the configuration."
+            no_selected_unlock: "Select unlock to complete the configuration."
+            no_selected_control_boards: "Select at least one control panel to complete the configuration."
+            no_CA_arm_selected: "Select at least one product from CA1, CA2, CA1C, CA2C to complete the configuration."
+            no_PH1_selected: "Select CBA or CBAC to complete the configuration."
+            no_PH2_selected: "Select the CTA product to complete the configuration."
+            no_PH3_selected: "Select BCP or BLP to complete the configuration."
+            no_PH234_selected: "Select the CTBP or CTA product and either BLP or BCP to complete the configuration."
+            no_min_configuration_bar: "Select at least one boom to complete the configuration."
+            no_min_configuration_accbar: "Select at least one boom and the accessory kit to complete the configuration."
+            no_min_configuration_bar_or_accbar: "Select at least one boom and the accessory kit to complete the configuration."
+            no_min_configuration_art: "Select at least one articulation to complete the configuration."
+            no_min_configuration_extension_bar: "You need to select a boom extension to complete the configuration."
+            useful_passage_bigger_doorwidth: "Data entered incorrectly. You cannot request a clear opening greater than the door opening available"
+            operator_smaller_increase_cable: "The number of additional charges does not match the number of operators"
+            glass_too_heavy: "The installation cannot be made as the weight of the leaf exceeds 250 kg "
+            no_min_configuration_485_slim: "Select COMPASS 485 and COMPASS SLIM to complete the configuration."
+            no_min_configuration_compass: "Select at least one product from COMPASS SC USB, COMPASS SC 232 and COMPASS 232 to complete the configuration."
+            no_min_configuration_software: "Select at least one software to complete the configuration."
+            no_selected_controlpanel: "Select at least one control panel to complete the configuration."
+            no_selected_rack: "Select at least one rack to complete the configuration."
+            insufficient_rack: "The selected rack's quantity is too little for a correct configuration."
+            no_selected_antenna: "Select at least one antenna to complete the configuration."
+            no_selected_transponder: "Select at least one transponder to complete the configuration."
+            no_selected_controller: "Select at least one controller (VISTA SEL) to complete the configuration."
+            must_add_more_perseo: "The Parseo number is too little than selected rising bolloards."
+            no_selected_rails: "Select at least one track to complete the configuration."
+            no_selected_brct: "Select at least one adapter (BRCT) to complete the configuration."
+            elettroserratura_missing: "Select at least one electric lock to complete the configuration."
+            cassa_fondazione_missing: "Select at least one loading bearing foundation to complete the configuration."
+            no_selected_2nd_operator: "Select two operators to complete the configuration."
+            no_selected_2nd_cassa_fondazione: "Select two loading bearing foundation to complete the configuration."
+            incomplete_proposalconf_barriers: "To finish the configuration you need select also the following products: %{msg}"
+            no_selected_rubber_edge: "With STR/FLCP2/VENTIMIGLIA NS you need select at least one rubber profile"
+
+      menu_item:
+        gate: "Gate"
+        garden: "Garden"
+      hints:
+        bid:
+          link: "Enter the link"
+        tech_info:
+          date: "Enter the date"
+          info: "Enter the content"
+          title: "Enter the title"
+        user:
+          email: "Enter your e-mail"
+          password: "Enter your password"
+          password_confirmation: "Confirm your password"
+          name: "Enter your name"
+          p_iva: "Enter your vat number ( e.g: IT00000000000 )"
+          telephone: "Enter your phone number"
+          address: "Enter your address"
+          cap: "Enter your post code"
+          city: "Enter your town"
+          district: "Enter your city"
+          region: "Enter your county"
+          nation: "Enter your country"
+          logo: "Enter your logo"
+          company: "Enter your company"
+          leo_expiry_date: "Leonardo expiry date"
+          preferential_category: "Select your category"
+        customer:
+          q: "Enter the customer name or quote number"
+          name: "Enter the customer name"
+          address_one: "Enter the customer address"
+          city: "Enter the customer's town"
+          district: "Enter the customer's city"
+          region: "Enter the customer's county"
+          nation: "Enter the customer's Country"
+          zip: "Enter the post code "
+          web_address: "Enter the customer's web site"
+          email: "Enter the customer's email address (necessary to send offers by email)"
+          phone_number_office: "Enter the customer's main phone number"
+          phone_number_fax: "Enter the customer's fax number"
+          display_name: "Customer"
+          p_iva: "Enter the customer's vat"
+        location:
+          name: "Enter the customer's name"
+          address: "Enter the customer's address"
+          city: "Enter the customer's city"
+          zip: "Enter the customer's zip"
+          email: "Enter the customer's email address (necessary to send offers by email)"
+          phone_number: "Enter the customer's main phone number"
+          fax_number: "Enter the customer's fax number"
+          display_name: "Plant location"
+          description: "Enter the plant location"
+        installer:
+          name: "Enter the installer's name"
+          address: "Enter the installer's address"
+          city: "Enter the installer's city"
+          zip: "Enter the installer's zip"
+          email: "Enter the installer's email address"
+          phone_number: "Enter the installer's main phone number"
+          fax_number: "Enter the installer's fax number"
+          display_name: "Plant location"
+        service_center:
+          name: "Enter the service center's name"
+          address: "Enter the service center's address"
+          city: "Enter the service center's city"
+          zip: "Enter the service center's zip"
+          email: "Enter the service center's email address"
+          phone_number: "Enter the service center's phone number"
+          fax_number: "Enter the service center's zip fax number"
+          display_name: "Service center"
+        proposal_conf_line:
+          price: "Enter the price"
+          description: "Enter the description"
+          serial: "Enter the product serial number"
+        menu_item:
+          title: "Enter a title for the subject"
+          item_type: "The subject may be a gate or a garden decoration"
+        picture:
+          file: "Upload an image file to be attached"
+
+    survey:
+      question_0:
+        title: "Sectors"
+        civil: "civil"
+        tertiary: "tertiary"
+        industrial: "industrial"
+      question_1:
+        title: "Applications"
+        electrical_plants: "electrical systems"
+        special_plants: "special installations"
+        automation: "automations"
+        anti_theft: "antitheft device"
+      question_2:
+        title: "Products used"
+        sliding_gates: "sliding gates"
+        electro_swing_gates: "electromechanical swing gates"
+        oildynamic_swing_gates: "hydraulic swing gates"
+        roller_shutter: "rolling shutters"
+        road_barriers: "road barriers"
+        automatic_doors: "automatic doors"
+        counterweight: "overhead doors"
+        roll_up_doors: "roll-up doors"
+        access_control: "access control"
+        rising_bolloards: "rising bollards"
+        park_management: "parking management"
+      question_3:
+        title: "Automation - year"
+        until_10: "up to 10"
+        until_20: "up to 20"
+      question_4:
+        title: "Technical service"
+        trainig_courses: "training courses"
+        commercial_initiatives: "commercial initiatives"
+        mailing: "mailing"

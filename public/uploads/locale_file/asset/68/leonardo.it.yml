@@ -1,0 +1,264 @@
+it:
+  leonardo:
+    footer:
+      label: "Fascicolo tecnico di porte e cancelli motorizzati"
+      pages: "Pagine"
+    heading:
+      title: "FASCICOLO TECNICO DI PORTE E CANCELLI MOTORIZZATI AI SENSI DELLA DIRETTIVA MACCHINE 2006/42/CE ALLEGATO VII."
+      subtitle: "Questo è il fascicolo tecnico della macchina:"
+      intended_use: "Uso previsto"
+      builder: "Costruttore"
+      note: "Non distruggere -non modificare -integrare solo con fascicoli aggiuntivi."
+      type: "Tipo"
+      full_text: "<h3>Premessa:</h3><p>Per \"macchina\", ai sensi dell’Art. 1.2 della Direttiva Macchine (DM), si intende:<br/>
+        — insieme equipaggiato o destinato ad essere equipaggiato di un sistema di azionamento diverso dalla forza umana o animale diretta, composto di parti o di componenti, di cui almeno uno mobile, collegati tra loro solidamente per un'applicazione ben determinata,<br/>
+        — insieme di cui al primo trattino, al quale mancano solamente elementi di collegamento al sito di impiego o di allacciamento alle fonti di energia e di movimento,<br/>
+        — insieme di cui al primo e al secondo trattino, pronto per essere installato e che può funzionare solo dopo essere stato montato su un mezzo di trasporto o installato in un edificio o in una costruzione,<br/>
+        — insieme di macchine, di cui al primo, al secondo e al terzo trattino, o di quasi-macchine, di cui alla lettera g), che per raggiungere uno stesso risultato sono disposti e comandati in modo da avere un funzionamento solidale,<br/>
+        — insieme di parti o di componenti, di cui almeno uno mobile, collegati tra loro solidalmente e destinati al sollevamento di pesi e la cui unica fonte di energia è la forza umana diretta.<br/><br/>
+        Con il termine \"porta\", in questo documento, si intendono porte, serrande e cancelli di vario tipo (a scorrimento, a libro, inclinabili, girevoli su cardini, avvolgibili, a sollevamento verticale e di altri tipi con varianti per ogni tipo).<br/><br/>
+        Con il termine \"costruttore\" o \"fabbricante\" si intende colui che fornisce la porta motorizzata, oppure colui che \"motorizza\" una porta manuale preesistente, oppure colui che, apponendo la marcatura CE sulla porta motorizzata, si assume la responsabilità della costruzione di tale macchina.<br/>
+        La Commissione dell’Unione Europea ha stabilito che le porte e i cancelli motorizzati rientrano nel campo di applicazione della Direttiva Macchine, quindi l’installatore che \"motorizza\" una porta o un cancello ha gli stessi obblighi del costruttore di una macchina e come tale deve:<br/>
+        — predisporre il fascicolo tecnico che dovrà contenere i documenti indicati nell’Allegato VII della DM;<br/>
+        — redigere la dichiarazione CE di conformità secondo l’Allegato II-A della DM;<br/>
+        — apporre la marcatura CE sulla porta motorizzata ai sensi del punto 1.7.3 dell’Allegato I della DM.<br/><br/>
+        Il Fascicolo Tecnico consente di fornire una documentazione tecnica contenente tutte le informazioni in grado di dimostrare la conformità del prodotto ai requisiti della direttiva. La valutazione della conformità del prodotto \"automatismo porta/cancello\" si basa esclusivamente sulla dichiarazione di conformità del produttore, senza intervento di una terza parte o organismo notificato.<br/>
+        In questi casi il fascicolo tecnico preparato dal produttore per giustificare l'apposizione della marcatura CE al proprio prodotto assume una particolare importanza.<br/>
+        Il Fascicolo Tecnico identifica chiaramente il prodotto comprendendo tutti gli elementi di prova della sua conformità (prove o rapporti di test) riducendo la possibilità che vengano a crearsi ambiguità e incomprensioni con i servizi di controllo durante le verifiche effettuate sul mercato.<br/>
+        Le informazioni dettagliate contenute nel presente fascicolo dipendono sempre dal tipo di prodotto (automazione porta/cancello) e da quello che è necessario da un punto di vista tecnico per dimostrare la conformità del prodotto sia alle norme armonizzate nel caso in cui il produttore abbia seguito queste ultime, sia ai requisiti essenziali della Direttiva nel caso in cui il produttore non abbia seguito o abbia seguito solo in parte le norme armonizzate.<br/><br/>
+        Il Fascicolo Tecnico è stato redatto in conformità ai requisiti essenziali di sicurezza e di salute relativi alla progettazione e alla costruzione delle macchine e dei componenti di sicurezza; tale documentazione e tutti i suoi allegati sono documenti aziendali riservati che devono essere conservati in archivio per un periodo di 10 anni a decorrere dalla data di costruzione della porta motorizzata e resi disponibili, se richiesto, agli organi competenti.<br/><br/>
+        La Direttiva Macchine specifica che i documenti tecnici devono essere redatti nella lingua ufficiale dello Stato Membro in cui vengono effettuate le procedure di attestazione di conformità.</p>
+        <h3>Contenuto del Fascicolo Tecnico:</h3>
+        <p>Il presente fascicolo tecnico è composto dai seguenti documenti:<br/>
+        — Descrizione generale della macchina.<br/>
+        — Disegno complessivo meccanico della porta/cancello automatico.<br/>
+        — Schemi elettrici, pneumatici, idraulici dei circuiti di comando.<br/>
+        — La documentazione tecnica dei componenti installati ed eventuali note di calcolo e di progetto (allegati).<br/>
+        — Analisi dei rischi comprendente: l'elenco dei requisiti essenziali previsti nell'allegato I della Direttiva Macchine, l'elenco dei rischi presentati dalla porta/cancello e la descrizione delle soluzioni adottate.<br/>
+        — Manuali di istruzioni ed avvertenze per l'installatore (di tutti i componenti utilizzati).<br/>
+        — Le istruzioni per l'uso e le avvertenze generali per la sicurezza consegnata al proprietario dell'automazione.<br/>
+        — Il registro di manutenzione consegnato al proprietario dell'automazione.<br/>
+        — La dichiarazione CE di conformità consegnata al proprietario dell'automazione.<br/>
+        — La predisposizione per la targa con la marcatura CE da applicare alla porta motorizzata.<br/>
+        — L'elenco dei segnali di avvertenza installati sull'impianto.<br/>
+        — L'elenco delle direttive e norme applicabili.<br/></p>"
+      valutation: "<div class=\"box\"><h2>MODALITÀ DI VALUTAZIONE DELLA CONFORMITÀ E MARCATURA CE<br/>
+        MOTORIZZAZIONE PORTE E CANCELLI</h2></div>
+        <p>Il software LEONARDO BFT vuole essere uno strumento di ausilio tecnico-normativo rivolto agli installatori/costruttori di chiusure automatiche motorizzate per la gestione del processo di certificazione CE, consente un approccio immediato ai requisiti di legge attraverso una sequenza guidata di azioni che obbligano l'utente (installatore/costruttore) a fornire tutte le informazioni necessarie per la corretta definizione della conformità alle Direttive vigenti.<br/>
+        Lo strumento non sostituisce e non assolve gli obblighi e le responsabilità fisiche che sono proprie del costruttore, il quale è tenuto a conoscere e rispettare in materia di sicurezza e salute, nella progettazione, nella scelta di soluzioni tecniche e dei materiali, per la costruzione di impianti e macchinari che intende mettere in commercio.<br/>
+        In particolare quando la chiusura automatica è il risultato della combinazione sul posto di prodotti di diversi costruttori o fornitori, l'installatore assume il ruolo del produttore per quanto concerne la valutazione della conformità della chiusura come prodotto finito e conseguentemente ne assume le responsabilità.<br/><br/>
+        BFT non può assumersi alcuna responsabilità per eventuali errori, omissioni, danni e perdite di dati derivanti dall'uso del presente software.<br/><br/>
+        Le porte e cancelli industriali, commerciali e da garage, hanno da Maggio 2004 una nuova “NORMA DI PRODOTTO, la EN 132411” la quale conferisce la presunzione di conformità alle principali Direttive applicabili che regolano il prodotto in oggetto mediante linee generali di individuazione delle prestazioni e caratteristiche con rinvii a norme armonizzate specifiche per le diverse caratteristiche. <br/>
+        La stessa norma presenta le modalità di marcatura del prodotto e i criteri di valutazione della conformità necessaria per la immissione del prodotto sul mercato in funzione ai campi di applicazione e specifiche particolari.<br/><br/>
+        Gli accessi al programma per eseguire l'analisi di rischi e le successive fasi di certificazione mediante “LEONARDO BFT” sono disponibili soltanto se sono state precedentemente verificate e selezionate le tipologie di “chiusura automatica” in cui ricade la propria applicazione, selezionando la casella di conferma associata con criterio esclusivo automatico.<br/></p>"
+      type_a: "Il costruttore/installatore certifica il prodotto per le parti applicabili con presunzione di conformità volontaria alla norma EN 13241-1, si dovranno effettuare nel luogo d'installazione i test in loco T1-T2-T3-T4-T5:<br/>
+        T1. Resistenza Meccanica, verificare che non vi siano deformazioni permanenti aprendo e chiudendo la porta almeno 10 volte con una forza  maggiorata del 10% rispetto al  normale funzionamento (EN 12604 - EN 12605) , in alternativa alla prove è ammesso la verifica mediante il solo calcolo.<br/>
+        T2. Protezione dal pericolo di caduta delle ante (movimento verticale)  pericolo di deragliamento delle ante (movimento orizzontale) richiesti test e ispezioni (i test fanno parte della analisi dei rischi e verifiche presenti nel software).<br/>
+        T3. Protezione contro lo schiacciamento, convogliamento e forze esercitate dalla motorizzazione. (i test fanno parte della analisi dei rischi e verifiche presenti nel software).
+        T4. Protezione contro i rischi elettrici, sicurezza dell'equipaggiamento e degli attuatori, verificare che tutti i componenti siano marcati CE (i test fanno parte della analisi dei rischi e verifiche presenti nel software).<br/>
+        T5. Verifica sulla compatibilità elettromagnetica, verificare che tutti i componenti siano marcati CE, di avere eseguito i collegamenti e scelto materiali secondo le indicazioni del fornitore. (i test fanno parte della analisi dei rischi e verifiche presenti nel software).<br/><br/>
+        Attuare gli accorgimenti rispettando i  requisiti essenziali di sicurezza della Direttiva Macchine secondo la EN13241-1 e tutte le altre norme armonizzate di riferimento,  Requisiti: <br/>
+        1. Sforzo statico per l'azionamento manuale delle ante ambiente residenziale/industriale (i requisiti fanno parte della analisi dei rischi e verifiche presenti nel software). <br/>
+        2. Sicurezza nei  materiali utilizzati , verificare che non creino pericoli aggiuntivi (materiali trasparenti ecc..) e che non rilascino sostanze pericolose. (i requisiti faranno parte della analisi dei rischi presentati dal software)<br/>
+        3. Durata meccanica, verificare la conformità e la vita utile economica della porta/cancello espressa in cicli di azionamento e difetti dovuti ad usura mediante ispezione visiva, rispetto a quanto prescritto nelle norme EN 12604 - 4.2 e EN 12605 - 5.2.<br/>
+        4. Evitare il pericolo di inciampo (i requisiti faranno parte della analisi dei rischi presentati dal software)<br/><br/>
+        Attestare la conformità mediante Dichiarazione di Conformità e marcatura CE rispetto alle Direttive:<br/>
+        Direttiva Macchine 2006/42/CE, Direttiva Compatibilità Elettromagnetica 2004/108/CE, Direttiva Bassa Tensione 2006/95/CE secondo  'ANNEX ZB e ZC EN 13241-1' <br/>
+        L'appendice ZA della 13241-1 non si applica a questo tipo di porte , non sussiste pertanto relazione della presente norma con la Direttiva Prodotti da Costruzione 89/106/CEE , non applicandosi l'ANNEX ZA non è applicabile la Direttiva 89/106/CEE."
+      type_b: "Il costruttore/installatore certifica il prodotto per le parti applicabili con presunzione di conformità volontaria alla norma EN 13241-1, si dovranno effettuare nel luogo d'installazione i test in loco T3-T4-T5:<br/>
+        T3. Protezione contro lo schiacciamento, convogliamento e forze esercitate dalla motorizzazione. (i test fanno parte della analisi dei rischi e verifiche presenti nel software).<br/>
+        T4. Protezione contro i rischi elettrici, sicurezza dell'equipaggiamento e degli attuatori, verificare che tutti i componenti siano marcati CE (i test fanno parte della analisi dei rischi e verifiche presenti nel software)<br/>
+        T5. Verifica sulla compatibilità elettromagnetica, verificare che tutti i componenti siano marcati CE, di avere eseguito i collegamenti e scelto materiali secondo le indicazioni del fornitore. (i test fanno parte della analisi dei rischi e verifiche presenti nel software)<br/><br/>
+        Attuare gli accorgimenti rispettando i  requisiti essenziali di sicurezza della Direttiva Macchine secondo la EN13241-1 e tutte le altre norme armonizzate di riferimento,  Requisiti: <br/>
+        1. Sforzo statico per l'azionamento manuale delle ante ambiente residenziale/industriale (i requisiti fanno parte della analisi dei rischi e verifiche presenti nel software). <br/>
+        2. Sicurezza nei  materiali utilizzati , verificare che non creino pericoli aggiuntivi (materiali trasparenti ecc..) e che non rilascino sostanze pericolose. (i requisiti faranno parte della analisi dei rischi presentati dal software)<br/>
+        3. Durata meccanica, verificare la conformità (mediante dichiarazione di conformità CE rilasciata dal costruttore dell'anta) relativa alle caratteristiche di performance ottenute mediante le prove del tipo iniziale (PTI) e  controllo di produzione in fabbrica (CPF).<br/>
+        4. Evitare il pericolo di inciampo (i requisiti faranno parte della analisi dei rischi presentati dal software)<br/><br/>
+        Attestare la conformità mediante Dichiarazione di Conformità e marcatura CE rispetto alle Direttive:<br/>
+        Direttiva Macchine 2006/42/CE , Direttiva Compatibilità Elettromagnetica 2004/108/CE , Direttiva Bassa Tensione 2006/95/CE secondo  'ANNEX ZB e ZC EN 13241-1' <br/>
+        L'appendice ZA della 13241-1 non si applica a questo tipo di porte , non sussiste pertanto relazione della presente norma con la Direttiva Prodotti da Costruzione 89/106/CEE , non applicandosi l'ANNEX ZA non è applicabile la Direttiva 89/106/CEE."
+      type_c: "Una porta/cancello costruito a misura purché le misure non siano l'unica differenziazione con altri prodotti e purché non sia in un catalogo del costruttore, anche se installato insieme alla motorizzazione, risulterà una apparecchiatura non di serie e quindi ad esso non si potrà applicare l'ANNEX ZA della 13241-1 e di conseguenza non è soggetto alla conformità alla Direttiva Prodotti da Costruzione 89/106/CEE.<br/><br/>
+        Il costruttore/installatore certifica il prodotto per le parti applicabili con presunzione di conformità volontaria alla norma EN 13241-1, si dovranno effettuare nel luogo d'installazione i test in loco. T3-T4-T5:<br/>
+        T3. Protezione contro lo schiacciamento, convogliamento e forze esercitate dalla motorizzazione. (i test fanno parte della analisi dei rischi e verifiche presenti nel software). <br/>
+        T4. Protezione contro i rischi elettrici, sicurezza dell'equipaggiamento e degli attuatori, verificare che tutti i componenti siano marcati CE  (i test fanno parte della analisi dei rischi e verifiche presenti nel software)<br/>
+        T5. Verifica sulla compatibilità elettromagnetica, verificare che tutti i componenti siano marcati CE, di avere eseguito i collegamenti e scelto materiali secondo le indicazioni del fornitore. (i test fanno parte della analisi dei rischi e verifiche presenti nel software)<br/><br/>
+        Attuare gli accorgimenti rispettando i  requisiti essenziali di sicurezza della Direttiva Macchine secondo la EN13241-1 e tutte le altre norme armonizzate di riferimento. <br/>
+        Requisiti:<br/>
+        1. Sforzo statico per l'azionamento manuale delle ante ambiente residenziale/industriale (i requisiti fanno parte della analisi dei rischi e verifiche presenti nel software).<br/>
+        2. Sicurezza nei  materiali utilizzati , verificare che non creino pericoli aggiuntivi (materiali trasparenti ecc..) e che non rilascino sostanze pericolose. (i requisiti faranno parte della analisi dei rischi presentati dal software)<br/>
+        3. Durata meccanica, verificare la conformità (mediante dichiarazione di conformità CE rilasciata dal costruttore dell'anta) relativa alle caratteristiche di performance ottenute mediante le prove del tipo iniziale (PTI) e  controllo di produzione in fabbrica (CPF).<br/>
+        4. Evitare il pericolo di inciampo (i requisiti faranno parte della analisi dei rischi presentati dal software)<br/><br/>
+        Attestare la conformità mediante Dichiarazione di Conformità e marcatura CE rispetto alle Direttive:<br/>
+        Direttiva Macchine 2006/42/CE , Direttiva Compatibilità Elettromagnetica 2004/108/CE , Direttiva Bassa Tensione 2006/95/CE secondo  'ANNEX ZB e ZC EN 13241-1'<br/>
+        L'appendice ZA della 13241-1 non si applica a questo tipo di porte , non sussiste pertanto relazione della presente norma con la Direttiva Prodotti da Costruzione 89/106/CEE , non applicandosi l'ANNEX ZA non è applicabile la Direttiva 89/106/CEE."
+      type_d: "Per questa tipologia di prodotti, si applica obbligatoriamente l'ANNEX ZA della 13241-1, e di conseguenza la conformità alla Direttiva 89/106/CEE per i Prodotti da Costruzione,  devono essere effettuate le prove ti tipo iniziale (PTI) ed eseguire i controlli di produzione in fabbrica (CPF) da parte del costruttore, le verifiche e prove devono essere certificate mediante l'intervento di un organismo notificato.<br/><br/>
+        Attestare la conformità mediante Dichiarazione di Conformità e marcatura CE rispetto alle Direttive:<br/>
+        Direttiva Prodotti da Costruzione 89/106/CEE, Direttiva Macchine 2006/42/CE , Direttiva Compatibilità Elettromagnetica 2004/108/CE , Direttiva Bassa Tensione 2006/95/CE secondo  'ANNEX ZB e ZC EN 13241-1'"
+    conformity:
+      builder: "Il costruttore:"
+      title: "DICHIARAZIONE DI CONFORMITÀ"
+      subtitle: "(secondo allegato II, parte A D.M. 2006/42/CE)"
+      declare: "Dichiara che l'automatismo"
+      is_conform: "E' conforme alle direttive"
+      and_also: "E inoltre dichiara che, per quanto applicabili, sono state rispettate le seguenti norme armonizzate:"
+      date_and_place: "Luogo e data"
+      signature: "Titolo e Firma del Responsabile Legale"
+      tech_sign: "Firma del tecnico"
+      cust_sign: "Firma del cliente"
+    tablet:
+      note: "Note"
+      automatic_open: "Apertura automatica"
+    analysis:
+      title: "Analisi dei rischi"
+      subtitle: "In conformità ai requisiti essenziali di cui all'allegato I"
+      full_text: "<br/>OSSERVAZIONI PRELIMINARI<br/><br/>
+        1. Gli obblighi previsti dai requisiti essenziali di sicurezza e di salute sono stati applicati soltanto se sussiste il rischio corrispondente per la macchina in questione allorché viene utilizzata alle condizioni previste dal fabbricante.<br/><br/>
+        2. I requisiti essenziali di sicurezza e di salute elencati nella presente direttiva sono inderogabili. Tuttavia, tenuto conto dello stato della tecnica, gli obiettivi da essi prefissi possono non essere raggiunti. In questo caso e nella misura del possibile la macchina (automatismo porta/cancello) è progettata e costruita per tendere verso tali obiettivi.<br/><br/>
+        3. I requisiti essenziali di sicurezza e di salute sono stati raggruppati in funzione dei rischi che coprono. Le macchine (automatismo porta/cancello) presentano un insieme di rischi che possono essere esposti in vari capitoli del presente allegato. Il fabbricante ha effettuato un'analisi dei rischi per cercare tutti quelli che concernono la sua macchina (automatismo); ha inoltre progettato e costruito il sistema tenendo presente l'analisi. Nell'analisi dei possibili rischi derivanti dall'utilizzo del cancello/porta automatizzato è stata considerata anche la verifica dello stato meccanico della chiusura da automatizzare. L'ordine in cui vengono presentati i rischi è quello delle attività di installazione. L'elenco dei CHECK relativi ai rischi presenti nella macchina è stato realizzato tenendo conto dello stato dell'arte e della tecnica e, in particolare alle norme armonizzate prese in considerazione ed elencate al presente fascicolo tecnico.<br/><br/>
+        L’analisi è condotta con il supporto dello strumento informatico LEONARDO-BFT , esso prende in considerazione gli aspetti fino ad ora citati con l’obiettivo di rilevare gli scostamenti rispetto ai requisiti di base, ogni non conformità viene evidenziata nella casella di riferimento, si è tenuto conto per quanto possibile dei tre livelli di intervento sui quali si deve intervenire:<br/>
+        • progettazione e costruzione volte alla sicurezza<br/>
+        • utilizzo dei dispositivi di protezione e sicurezza<br/>
+        • informazione all’utente sul rischio residuo<br/>
+        La presenza di una o più norme armonizzate relativamente al punto trattato sono indicative e non costituiscono un vincolo e/o obbligo, ma solo un orientamento ad assicurare la presunzione di conformità. La rimozione della non conformità può avvenire in base ai punti sopra, per quanto possibile si deve attuare la modifica in fase di progettazione.<br/>
+        Il miglioramento si intende concluso quando lo stato delle non conformità non può essere migliorato in nessun modo possibile, nessuna non conformità deve essere presente, in particolare il punto 1.1.2 della Direttiva 2006/42/CE deve essere soddisfatto.<br/><br/>
+        Ad ogni pericolo vengono correlati i requisiti essenziali pertinenti, dove sono descritte le soluzioni adottate per prevenire i pericoli presentati dalla macchina (automatismo tipo).Tutti i pericoli presentati dalla macchina (automatismo) sono stati presi in considerazione.<br/>
+        — I requisiti essenziali di sicurezza non relativi al tipo di automatismo (porta/cancello) sono indicati come \"Non Applicabile\" apponendo questa sigla nella relativa casella.<br/>
+        — I requisiti essenziali di sicurezza applicabili e resi conformi al tipo di automatismo (porta/cancello) sono indicati come \"Conforme\" apponendo questa sigla nella relativa casella.<br/>
+        — I requisiti essenziali di sicurezza risultati non conformi sono indicati come \"Non Conforme\" apponendo questa sigla nella relativa casella.<br/>
+        Per ogni punto è pertanto possibile verificarne l’applicazione mediante evidenza oggettiva.<br/><br/>
+        Rischi residui : L’elenco dei rischi residui sono elencati al documento elaborato dal software LEONARDO-BFT riferiti ad ogni punto dell’allegato I della Direttiva Macchine.<br/>
+        Resta inteso che, la permanenza di “rischi residui” che, non si sono potuti rimuovere tecnicamente, sarà affrontata segnalando il rischio all'utilizzatore, caricandolo di responsabilità comportamentali, organizzative e procedurali, fornendogli adeguate istruzioni e/o indicando l'utilizzo di appropriati mezzi di protezione.<br/><br/>
+        Note: L’elenco delle note sono elencate al documento elaborato dal software LEONARDO-BFT riferiti ad ogni punto dell’allegato I della Direttiva Macchine.<br/><br/>
+        Note Utente: sono le descrizioni che il costruttore ha ritenuto utile segnalare ad ogni punto dell'analisi dei rischi per poi inserirle all'interno del manuale d'uso e avvertenze che sarà consegnato all'utilizzatore dell'automatismo e che è parte integrante del presente fascicolo Tecnico."
+      risk_type: "Tipologia di rischio"
+      precheck: "Verifiche preliminari"
+      solution: "Criterio di Valutazione - Soluzione adottata"
+      evaluation: "Valutazione"
+      residual_risk: "Rischi residui"
+      alternative_solution: "Soluzioni alternative"
+      note: "Note"
+      customer_note: "Note del cliente"
+      installation_note: "Note di installazione"
+      not_applying_note: "Note non applicabile"
+      empty_note: "Nessuna nota"
+    maintenance:
+      title: "REGISTRO DI MANUTENZIONE"
+      subtitle: "In conformità alla Direttiva Macchine 2006/42/CE e alle norme EN 13241-1; EN 12453; EN 12445"
+      owner: "Proprietario"
+      builder: "Costruttore"
+      service_center: "Centro di assistenza"
+      frequency: "Frequenza di manutenzione"
+      note: "Note"
+      full_text: "Il presente registro di manutenzione contiene i riferimenti tecnici e le registrazioni delle attività di installazione, riparazione e modifiche svolte sull'impianto durante il suo tempo di vita e dovrà essere reso disponibile per eventuali ispezioni da parte di organismi e autorità autorizzati.<br/>
+        Non essendo in vigore una legge che preveda la manutenzione obbligatoria delle chiusure automatiche, questa viene effettuata solo su richiesta del committente, il quale si assume la responsabilità della mancata attuazione del piano di manutenzione prevista dal costruttore (cioè l'installatore) al momento dell'assemblaggio dell'automatismo.<br/>
+        In ogni caso gli interventi di manutenzione devono essere rivolti a verificare che l'impianto è conforme a quelle che erano le sue condizioni iniziali.<br/>
+        Ovviamente le operazioni di manutenzione devono essere svolte da personale qualificato ed utilizzando componenti conformi alle norme.<br/><br/>
+        Per mantenere costante il livello di sicurezza e per garantire la massima durata dell’intera automazione è necessaria una manutenzione regolare. La manutenzione deve essere effettuata nel pieno rispetto delle prescrizioni sulla sicurezza del manuale d'uso e avvertenze e secondo quanto previsto dalle leggi e normative vigenti.<br/><br/>
+        Per il vostro impianto di automazione è necessaria una manutenzione programmata secondo la frequenza indicata in tabella.<br/><br/>
+        Elenco delle verifiche generali da eseguire per la manutenzione:<br/><br/>
+        — Scollegare qualsiasi sorgente di alimentazione elettrica, comprese le eventuali batterie tampone.<br/>
+        — Verificare lo stato di deterioramento di tutti i materiali che compongono l’automazione con particolare attenzione a fenomeni di erosione o di ossidazione delle parti strutturali; sostituire le parti che non forniscono sufficienti garanzie.<br/>
+        — Verificare lo stato di usura delle parti in movimento e tutte le parti dell’anta: ingrassare chiocciola, vite rullata, snodi soggetti a rotazione ed eventualmente sostituire le parti usurate.<br/>
+        — Ricollegare le sorgenti di alimentazione elettrica ed eseguire tutte le prove e le verifiche previste nel Collaudo:<br/>
+        — Verificare che sia stato rispettato rigorosamente tutto quanto previsto nel manuale di istruzioni ed avvertenze per l’installatore ed in particolare nel capitolo Avvertenze.<br/>
+        — Verificare il collegamento elettrico tra motore e centrale di comando.<br/>
+        — Verificare, nel caso sia attivato, il corretto sfasamento delle ante durante la manovra di apertura e chiusura.<br/>
+        — Verificare il corretto funzionamento del dispositivo di sblocco. A tal proposito fare riferimento alle istruzioni per l’uso, provare quindi lo sblocco e la manovra manuale dell’anta. Bloccare nuovamente a verifica eseguita.<br/>
+        — Se le situazioni pericolose provocate dal movimento dell’anta sono state salvaguardate mediante la limitazione della forza d’impatto si deve eseguire la misura della forza secondo quanto previsto dalla norma EN 12445.<br/>
+        — Se la regolazione della Amperometrica o il controllo della Forza Motore vengono usati come ausilio al sistema per la riduzione della forza d’impatto, provare e trovare le regolazione che offrono i migliori risultati.<br/><br/>
+        Una copia di questo registro di manutenzione è consegnata anche all'utilizzatore dell'impianto di automazione."
+      list: "Lista componenti installati:"
+      features: "Le caratteristiche tecniche e le prestazioni dei componenti sotto elencati sono documentate nei relativi manuali di installazione e/o sull'etichetta posta sul componente stesso."
+      maintenance_description: "Descrizione dell'intervento"
+      maintenance_type: "Selezionare il tipo di intervento eseguito; descrivere gli eventuali rischi residui e/o l'uso improprio prevedibile."
+      date: "Data"
+      tech_signature: "Firma del tecnico"
+      cust_signature: "Firma del cliente"
+      type:
+        choise_1: "Installazione"
+        choise_2: "Riparazione"
+        choise_3: "Avviamento"
+        choise_4: "Modifiche"
+        choise_5: "Regolazioni"
+        choise_6: "Altro"
+        choise_7: "Manutenzione"
+    signposting:
+      title: "TARGHE E PITTOGRAMMI INSTALLATI"
+      abstract: "Di seguito viene riportato l’elenco dei pittogrammi e il relativo posizionamento sull'impianto.<br/>
+        Gli appositi segnali riportati in questo documento evidenziano i punti di rischio residui non protetti presenti sull'impianto e gli eventuali usi non conformi prevedibili.<br/>
+        Per definizione i rischi residui sono quelli che, a seguito dell’analisi del prodotto vengono valutati come poco probabili, poco frequenti e poco pericolosi, in relazione al funzionamento e ai costi necessari per la loro eliminazione o protezione.<br/>
+        Nota: i segnali installati sull'impianto dal costruttore non devono assolutamente essere rimossi da parte dell'utente, compresa la targa con la marcatura CE affissa sul macchinario, si declina ogni responsabilità da eventuali danni provocati dalla mancanza di segnalazioni ed avvertenze visive."
+    norm_list:
+      title: "Elenco delle direttive e norme applicate"
+      directives: "Direttive:"
+      norms: "Norme armonizzate:"
+    document:
+      title: "Documenti"
+    manual:
+      title: "MANUALE DI ISTRUZIONI PER L'USO E AVVERTENZE"
+      subtitle: "In conformità alla Direttiva Macchine 2006/42/CE e alle norme EN 13241-1; EN 12453; EN 12445"
+      manual_subtitle: "Cliccare il pulsante per completare il manuale di istruzioni"
+      owner: "Proprietario"
+      builder: "Costruttore"
+      frequency: "Frequenza di manutenzione"
+      note: "Note"
+      intro: "<p>Complimenti per averci scelto come installatore di fiducia per la vostra automazione, la nostra azienda utilizza solo materiali e lavorazioni di qualità e per vocazione ricerca soluzioni innovative che semplifichino al massimo l’utilizzo delle sue apparecchiature e automatismi, curate nelle soluzioni tecniche, estetiche, ergonomiche, scegliendo il prodotto/sistema più adatto alle vostre esigenze.<br/>
+        Ogni nostra automazione è unica e possiede l'esperienza e la professionalità necessarie ad eseguire un impianto sicuro ed affidabile nel tempo, e soprattutto a regola d’arte, rispondente cioè alle normative in vigore. Un impianto di automazione è una bella comodità, oltre che un valido sistema di sicurezza e, con  poche, semplici attenzioni, è destinato a durare negli anni. Anche se l'automazione in vostro possesso soddisfa il livello di sicurezza richiesto dalle normative, questo non esclude l’esistenza di un \"rischio residuo\", cioè la possibilità che si possano generare situazioni di pericolo, solitamente dovute ad un utilizzo incosciente o addirittura errato,  per questo motivo desideriamo darvi alcuni consigli sui comportamenti da seguire per evitare ogni inconveniente.<br/>
+        Prima di usare per la prima volta l'automazione e dopo che inizialmente avete ricevuto tutte le spiegazioni dall'installatore sull'origine dei rischi residui e il suo utilizzo in sicurezza, dedicate qualche minuto alla lettura del presente manuale di istruzioni ed avvertenze per l'utilizzatore consegnatovi.<br/>
+        Conservate il manuale per ogni dubbio futuro e consegnatelo ad un eventuale nuovo proprietario dell'automazione.<br/>
+        — Il manuale contiene istruzioni ed avvertenze e costituisce documentazione che deve necessariamente accompagnare il prodotto, perché altrimenti il prodotto medesimo risulterebbe privato di uno dei suoi requisiti essenziali di sicurezza.<br/>
+        — Il manuale va conservato con cura, diffuso e reso disponibile a tutte le persone interessate.<br/>
+        — Le avvertenze hanno lo scopo di salvaguardare la sicurezza delle persone esposte contro eventuali rischi residui.<br/>
+        — Le istruzioni forniscono le indicazioni per il comportamento più idoneo al corretto impiego dell’impianto così come previsto dal costruttore.<br/>
+        Nessuna parte di esso può essere duplicata, riprodotta o trasmessa sotto qualunque forma o con qualunque mezzo elettronico, meccanico o fotografico senza esplicito permesso del costruttore dell'automatismo.<br/><br/>
+        Il manuale dell’utente fa uso dei seguenti messaggi di segnalazione:<br/><br/>
+        NOTA - LE NOTE CONTENGONO IMPORTANTI INFORMAZIONI EVIDENZIATE AL DI FUORI DEL TESTO, PRESTARE MOLTA ATTENZIONE<br/><br/>
+        AVVERTENZA - I MESSAGGI DI AVVERTENZA CONTENGONO DELLE PROCEDURE, INDICATE NEL MANUALE, LA CUI MANCATA OSSERVANZA PUÒ CAUSARE DANNI ALLE APPARECCHIATURE<br/><br/>
+        ATTENZIONE - I MESSAGGI DI ATTENZIONE INDICANO LE PARTICOLARI PROCEDURE LA CUI MANCATA OSSERVANZA PUÒ RECARE DANNI ALLE PERSONE, ANIMALI, COSE.</p>"
+      warning: "<p><strong>Avvertenze per la sicurezza:</strong><br/><br/>
+        Il manuale prevede un uso ragionevole della automazione, anche tenendo conto di casi reali ed ammessi e non tratta usi imprevedibili, sconsiderati o legati ad atti dolosi. Vengono fornite avvertenze e notizie di carattere generale e specifico, che devono essere messe in atto allo scopo di attenuare o eliminare quelle situazioni che possono portare alla nascita di rischi specifici e/o residui.<br/>
+        Per qualunque operazione da eseguire sull'automazione ci si deve attenere scrupolosamente alle procedure descritte nel presente manuale.<br/><br/>
+        ATTENZIONE:<br/>
+        La vostra automazione è un macchinario che esegue fedelmente i vostri comandi; un uso incosciente ed improprio può farlo diventare pericoloso: non comandate il movimento dell'automazione se nel suo raggio di azione si trovano persone, animali o cose si raccomanda pertanto di mantenere la debita distanza dal campo d'azione dell'automazione.<br/><br/>
+        ATTENZIONE:<br/>
+        Un impianto di automazione garantisce un alto grado di sicurezza, impedendo con i suoi sistemi di rilevazione il movimento in presenza di persone o cose, e garantendo un’attivazione sempre prevedibile e sicura. È comunque prudente vietare ai bambini di giocare in prossimità dell'automazione e per evitare attivazioni involontarie non lasciare i telecomandi alla loro portata: non è un gioco!<br/><br/>
+        AVVERTENZE SPECIFICHE:<br/>
+        Resta inteso che qualsiasi modifica e/o aggiunta di accessori, deve essere esplicitamente approvata e realizzata a cura dell'installatore/costruttore dell'automatismo, durante il funzionamento si hanno: parti elettriche in tensione, parti meccaniche in movimento, quindi non rimuovere nessuna protezione o chiusura, ne allentare viti o fissaggi, in quanto si possono arrecare gravi danni a persone o cose.<br/><br/>
+        — Togliere l’alimentazione elettrica, prima di qualsiasi intervento sull’impianto. Scollegare anche eventuali batterie tampone se presenti.<br/><br/>
+        — Non introdurre le mani,  le braccia, o altre parti del corpo in prossimità di qualsiasi  parte in movimento, in qualsiasi momento o condizione.<br/><br/>
+        — Non depositare pesi od oggetti sulle ante o parti della automazione.<br/><br/>
+        — Non premervi sopra con le mani, non adagiarvisi o appoggiarvisi con il corpo.<br/><br/>
+        — Durante il funzionamento dell'automatismo è assolutamente proibito tentare di sollevare, spostare, cose e/o persone, aprire o togliere i carter di protezione, portelli, elementi di copertura degli organi meccanici e accessori. Tali manomissioni possono causare gravi danni alle persone.<br/><br/>
+        — Non eseguire il lavaggio o la pulizia con getti d'acqua di qualsiasi parte della automazione, accessori e parti complementari.<br/><br/>
+        — E' assolutamente vietato al personale non autorizzato accedere al quadro elettrico e agli organi interni della macchina per qualsiasi motivo.<br/><br/>
+        — È fatto assoluto divieto di utilizzare l'automatismo in atmosfera potenzialmente esplosiva o in ambienti con pericolo di incendio.<br/><br/>
+        Questo prodotto è stato progettato e costruito esclusivamente per l'utilizzo indicato in questa documentazione. Usi non indicati in questa documentazione potrebbero essere fonte di danni al prodotto e di pericolo. Il costruttore declina qualsiasi responsabilità derivante dall'uso improprio o diverso da quello per cui è destinato ed indicato nella
+        presente documentazione.</p>"
+      use_and_command: "<p><strong>Comando e uso dell'automazione:</strong><br/><br/>
+        Poiché l’automazione può essere comandata a distanza e non a vista, mediante pulsante o telecomando, è indispensabile controllare frequentemente la perfetta efficienza. Tutti i dispositivi di protezione e di sicurezza devono essere mantenuti in condizioni di perfetta e costante efficienza. Anche le targhette segnaletiche di indicazione, di raccomandazione e di pericolo devono essere conservate in perfette condizioni e al loro posto.<br/>
+        L'utilizzo dell’automazione consente l'apertura e la chiusura del cancello/porta in modo motorizzato. Il comando può essere di diverso tipo (manuale-telecomando-controllo accessi con badge magnetico ecc.) secondo le necessità e le caratteristiche dell'installazione. Per i vari sistemi di comando, fare riferimento alle istruzioni d'uso relative ai singoli prodotti contenute nei documenti allegati al presente fascicolo tecnico:</p>"
+      dangerous_zones: "<p><strong>Zone pericolose:</strong><br/><br/>
+        ATTENZIONE: Evitare di operare in prossimità delle cerniere o organi meccanici in movimento. Non entrare nel raggio di azione della porta o cancello motorizzati mentre è in movimento.<br/>
+        Non opporsi al moto della porta o cancello motorizzati poiché questo può causare le seguenti situazioni di pericolo:</p>"
+      anomalies: "<p><strong>Anomalie:</strong><br/><br/>
+        AVVERTENZA: Per qualsiasi anomalia di funzionamento dei dispositivi di sicurezza, intervenire rapidamente avvalendosi solo di personale specializzato.<br/>
+        In caso di rotture o assenza di alimentazione, nell'attesa dell’intervento del vostro installatore, o del ritorno dell’energia elettrica se l’impianto non è dotato di batterie tampone, l’automazione può essere azionata come una qualunque apertura non automatizzata. Per fare ciò è necessario eseguire lo sblocco manuale (unico intervento consentito all’utente sull’automazione): tale operazione è stata particolarmente studiata  per assicurarvi sempre la massima facilità di utilizzo, senza uso di attrezzi particolari o necessità di sforzo fisico.<br/>
+        Procedura di sblocco:</p>"
+      residual_risks: "<p><strong>Rischi residui:</strong><br/><br/>
+        I rischi residui sono quelli che, a seguito dell’analisi del prodotto vengono valutati come poco probabili, poco frequenti e poco pericolosi, in relazione al funzionamento e ai costi necessari per la loro eliminazione o protezione. A tal proposito vengono segnalati qui a seguito gli eventuali rischi residui:</p>"
+      warranty: "<p><strong>Manutenzione:</strong><br/><br/>
+        Come ogni macchinario la vostra automazione ha bisogno di una manutenzione periodica affinché possa funzionare più a lungo possibile ed in completa sicurezza. Concordate con il vostro installatore un piano di manutenzione con frequenza periodica. Si consiglia un intervento ogni 6 mesi per un normale utilizzo domestico, ma questo periodo può variare in funzione dell’intensità d’uso. Qualunque intervento di controllo, manutenzione o riparazione deve essere eseguito solo da personale qualificato. Anche se ritenete di saperlo fare, non modificate l’impianto ed i parametri di programmazione e di regolazione dell’automazione: la responsabilità è del vostro installatore.<br/>
+        Il collaudo, le manutenzioni periodiche e le eventuali riparazioni devono essere documentate da chi le esegue e i documenti conservati dal proprietario dell'impianto.<br/>
+        Gli unici interventi che vi sono possibili e vi consigliamo di effettuare periodicamente sono la pulizia dei vetrini delle fotocellule e la rimozione di eventuali foglie o sassi che potrebbero ostacolare l’automatismo. Per impedire che qualcuno possa azionare il cancello, prima di procedere, ricordatevi di sbloccare l’automatismo (come descritto nella procedura di sblocco) e di utilizzare per la pulizia solamente un panno leggermente inumidito con acqua.<br/><br/>
+        <strong>Smaltimento:</strong><br/><br/>
+        Al termine della vita dell’automazione, assicuratevi che lo smantellamento sia eseguito da personale qualificato e che i materiali vengano riciclati o smaltiti secondo le norme valide a livello locale.<br/><br/>
+        <strong>Garanzia:</strong><br/><br/>
+        Il costruttore garantisce che l'automazione in oggetto è stata collaudata con esito ottimo. La garanzia è di  24 mesi dalla data di consegna ed è limitata alla buona qualità del materiale ed alla mancanza di difetti di costruzione.<br/>
+        Il cliente ha diritto unicamente alla sostituzione delle parti difettose, escluse le spese di trasporto e imballo per l'eventuale sostituzione. Nessun risarcimento è dovuto per l'eventuale inattività dell'automatismo. La garanzia è valida fintanto che sono state rispettate le condizioni di pagamento.<br/>
+        Le spese di assistenza, unitamente al costo dei ricambi impiegati che non rientrano nelle clausole di garanzia, dovranno essere regolate direttamente al tecnico che esegue l'intervento, il quale rilascerà una scheda di assistenza alla quale seguirà regolare fattura. Le tariffe di intervento ed il costo dei ricambi impiegati sono quelli del Listino Prezzi in vigore.<br/>
+        Non sono compresi nella garanzia, danni alla macchina causati da:<br/>
+        — Errori di conduzione e utilizzo improprio dell'utilizzatore;<br/>
+        — Mancata manutenzione programmata eseguita da personale esperto e qualificato.<br/>
+        — Guasti e/o rotture non imputabili al malfunzionamento della stessa.<br/><br/>
+        Siete soddisfatti? Nel caso vogliate installare nella vostra casa, stabilimento, attività commerciale un nuovo impianto di automazione, rivolgendovi alla nostra azienda installatrice vi garantirete, oltre che la consulenza di uno specialista e i prodotti più evoluti del mercato, il migliore funzionamento e la massima compatibilità delle automazioni.<br/>
+        Vi ringraziamo per aver letto queste raccomandazioni, e vi auguriamo la massima soddisfazione del vostro nuovo impianto: per ogni esigenza presente o futura rivolgetevi con fiducia al vostro installatore."

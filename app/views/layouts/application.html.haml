@@ -17,10 +17,8 @@
     #container
       #flash
         %p.notice= notice
-        %p.alert=alert
- 
-      #content= yield
-      #sidebar
-        .nav      
-          =link_to "files","/locale_files",:class=>"button button_nav"
-          =link_to "organizations","/organizations",:class=>"button button_nav"
+        %p.alert= alert
+      #content= yield 
+      #sidebar= yield :sidebar
+      
+   

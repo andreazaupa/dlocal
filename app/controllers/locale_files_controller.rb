@@ -1,13 +1,22 @@
 class LocaleFilesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /locale_files
   # GET /locale_files.xml
   def index
-    @locale_files = LocaleFile.all
-
+    @locale_files = LocaleFile.all if current_user.role=="admin"
+    @locale_files = current_user.organization.locale_files unless  current_user.role=="admin"
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @locale_files }
     end
+  end
+  
+  def translate_form
+   @locale_file=LocaleFile.find params[:id]
+  end
+  
+  def translate
+  
   end
 
   # GET /locale_files/1

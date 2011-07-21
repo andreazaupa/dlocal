@@ -1,0 +1,12 @@
+fr:
+  visualizer:
+    back: "Back"
+    scene_1: "View 1"
+    scene_2: "View 2"
+    photo_position: "Picture position"
+    zoom: "Zoom"
+    contrast: "Contrast"
+    save: "Save"
+    quit: "Quit"
+    saving: "Saving"
+    error: "Error"

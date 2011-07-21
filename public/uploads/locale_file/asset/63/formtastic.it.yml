@@ -1,0 +1,491 @@
+it:
+  formtastic:
+    :yes: 'Si'
+    :no: 'No'
+    create: 'Crea'
+    update: 'Aggiorna'
+    save: 'Salva'
+    submit: 'Invia'
+    required: 'Richiesto'
+    attach: 'Allega'
+    select_file: 'Seleziona file'
+    labels: 
+      display_name: "Cliente"
+      proposal_conf:
+        use: "Uso"
+        use_values:
+          semi-intensivo: "Semi-intensivo"
+          intensivo: "Intensivo"
+          molto_intensivo: "Molto Intensivo"
+        use_hint: "Seleziona il tipo di uso"
+      
+        gatewidth: "Lunghezza del cancello"
+        gatewidth_hint: "Inserisci la lunghezza"
+      
+        slidingcapacity: "Peso del cancello"
+        slidingcapacity_hint: "Inserisci il peso"
+      
+        slidinggatetype: "Tipo di cancello"
+        slidinggatetype_values:
+          autoportante: "Autoportante"
+          rotaia: "Rotaia"
+        slidinggatetype_hint: "Seleziona il tipo di cancello scorrevole"
+      
+        limitswitch: "Tipo di fine corsa"
+        limitswitch_values:
+          elettromeccanico: "Elettromeccanico"
+          induttivo: "Induttivo"
+        limitswitch_hint: "Seleziona il tipo di finecorsa dell'operatore"
+      
+        swinggatetype: "1 o 2 ante"
+        swinggatetype_values:
+          singola_anta: "Anta singola"
+          doppia_anta: "Anta doppia"
+        swinggatetype_hint: "Specifica se il cancello è a una o due ante"
+      
+        swinglenght: "Lunghezza dell'anta"
+        swinglenght_hint: "Inserisci la lunghezza della singola anta"
+      
+        swingcapacity: "Peso dell'anta"
+        swingcapacity_hint: "Inserisci il peso della singola anta"
+      
+        slope: "Pendenza"
+        slope_values:
+          "0": "Nessuna"
+          "5": "Fino a 5%"
+          "10": "Fino a 10%"
+          "15": "Fino a 15%"
+          "16": "Oltre il 15%"
+        slope_hint: "Inserisci l'angolo di pendenza del cancello ad apertura completa"
+      
+        angle: "Angolo di apertura"
+        angle_hint: "Inserisci l'angolo massimo di apertura"
+      
+        operator: "Tipo di operatore"
+        operator_values:
+          pistone: "Pistone"
+          interrato: "Interrato"
+          braccio_articolato: "Braccio articolato"
+        operator_hint: "Seleziona il tipo di operatore desiderato"
+      
+        unlockside: "Anta destra o sinistra"
+        unlockside_values:
+          destra: "Destra"
+          sinistra: "Sinistra"
+        unlockside_hint: "Seleziona il lato di apertura dell'anta (vista dall'interno della proprietà)"
+      
+        distancefromwallunder: "Cp - Distanza cerniera inferiore - pilastro"
+        distancefromwallunder_hint: "Inserisci la distanza del centro della cerniera inferiore dal pilastro del cancello"
+      
+        heightfromgroundunder: "Cg - Distanza anta - suolo"
+        heightfromgroundunder_hint: "Inserisci la distanza del cancello dal suolo"
+      
+        distancefromwallpiston: "O - Distanza trasversale cerniera - pilastro"
+        distancefromwallpiston_hint: "Inserisci la distanza del centro della cerniera dal pilastro dell'anta"
+      
+        distancefrominsideanglepiston: "X - Distanza longitudinale cernierna - pilastro"
+        distancefrominsideanglepiston_hint: "Inserisci la distanza del centro della cerniera dal lato interno del pilastro dell'anta"
+      
+        widthsidepivotpiston: "Dp - Profondità del pilastro"
+        widthsidepivotpiston_hint: "Inserisci la profondità del pilastro dell'anta"
+      
+        widthsideinsidepiston: "Wp - Larghezza del pilastro"
+        widthsideinsidepiston_hint: "Inserisci la larghezza del pilastro dell'anta"
+      
+        distancefromwallarm: "O - Distanza trasversale cerniera - pilastro"
+        distancefromwallarm_hint: "Inserisci la distanza del centro della cerniera dal pilastro dell'anta"
+      
+        distancefrominsideanglearm: "X - Distanza longitudinale cernierna - pilastro"
+        distancefrominsideanglearm_hint: "Inserisci la distanza del centro della cerniera dal lato interno del pilastro dell'anta"
+      
+        lateralinsidespace: "Ca - Spazio di manovra dopo il pilastro"
+        lateralinsidespace_hint: "Inserisci la distanza tra la fine del pilastro e un eventuale ostacolo laterale"
+      
+        widthsideinsidearm: "Wp - Larghezza del pilastro"
+        widthsideinsidearm_hint: "Inserisci la larghezza del pilastro dell'anta"
+      
+        automaticdoorwidth: "Cmax - Larghezza massima del vano di passaggio"
+        automaticdoorwidth_hint: "Inserisci la larghezza massima disponibile del vano di passaggio"
+      
+        automaticdoorsusefulpassage: "UP - Larghezza del passaggio utile desiderato"
+        automaticdoorsusefulpassage_hint: "Inserisci la larghezza che desideri per il passaggio utile"
+      
+        spaceright: "Orh - Spazio libero a destra"
+        spaceright_hint: "Inserisci la larghezza dello spazio libero a destra del vano di passaggio"
+      
+        spaceleft: "Olh - Spazio libero a sinistra"
+        spaceleft_hint: "Inserisci la larghezza dello spazio libero a sinistra del vano di passaggio"
+      
+        glassweight: "Peso dell'anta"
+        glassweight_hint: "Inserire il peso dell'anta, in caso di porta doppia indicare il peso dell'anta singola"
+      
+        automaticdoortype: "Tipo di anta"
+        automaticdoortype_values:
+          intelaiata: "Intelaiata"
+          in_vetro: "In vetro"
+        automaticdoortype_hint: "Selezionare la tipologia di anta"
+      
+        grabsize: "Spessore del vetro"
+        grabsize_values:
+          "10": "10 mm"
+          "12": "12 mm"
+        grabsize_hint: "Selezionare lo spessore del vetro"
+        
+        labelinterni: "Varchi interni"
+        labelesterni: "Varchi esterni"
+
+        labelinterni2: "Varchi interni"
+        labelesterni2: "Varchi esterni"
+      
+        intsinglepassage: "A senso unico interno"
+        intsinglepassage_hint: "Inserire il numero di varchi a senso unico con ingresso in una zona al chiuso"
+      
+        intdoublepassage: "A doppio senso interno"
+        intdoublepassage_hint: "Inserire il numero di varchi a doppio senso con ingresso in una zona al chiuso"
+      
+        intdoublecontrolledpassage: "A doppio senso interno con accesso controllato"
+        intdoublecontrolledpassage_hint: "Inserire il numero di varchi a doppio senso con ingresso in una zona al chiuso, dove si vuole effettuare un controllo accessi di direzione (anti-passback)"
+      
+        extsinglepassage: "A senso unico esterno"
+        extsinglepassage_hint: "Inserire il numero di varchi a senso unico all'aperto"
+      
+        extdoublepassage: "A doppio senso esterno"
+        extdoublepassage_hint: "Inserire il numero di varchi a doppio senso all'aperto"
+      
+        extdoublecontrolledpassage: "A doppio senso esterno con accesso controllato"
+        extdoublecontrolledpassage_hint: "Inserire il numero di varchi a doppio senso all'aperto, dove si vuole effettuare un controllo accessi di direzione (anti-passback)"
+      
+        bftreceiverpresence: "Varchi gestiti da riceventi CLONIX BFT"
+        bftreceiverpresence_values:
+          "si": "Si"
+          "no": "No"
+        bftreceiverpresence_hint: "Specifica se i varchi da gestire mediante dispositivo di accesso a mano libera sono già dotati di automazione con rivente CLONIX BFT"
+      
+        roadbarriersusefulpassage: "UP - Passaggio utile"
+        roadbarriersusefulpassage_hint: "Inserire il passaggio utile desiderato (dalla punta dell'asta a inizio cassone)"
+      
+        bondedheight: "Presenza soffitto"
+        bondedheight_values:
+          "si": "Si"
+          "no": "No"
+        bondedheight_hint: "Specifica se c'è un limite in altezza per l'asta quando la barriera è aperta"
+      
+        availableheight: "Hc - Altezza disponibile"
+        availableheight_hint: "Inserire l'altezza disponibile dal piano di appoggio della barriera al soffitto"
+      
+        garagedoorheight: "H - Altezza della porta"
+        garagedoorheight_hint: "Inserire l'altezza della porta"
+      
+        garagedoorwidth: "Larghezza della porta"
+        garagedoorwidth_hint: "Inserire la larghezza della porta"
+      
+        garagetype: "Tipo di porta"
+        garagetype_values:
+          sezionale: "Sezionale"
+          basculante: "Basculante"
+        garagetype_hint: "Specificare il tipo di porta"
+      
+        sezinstallationposition: "Porta orizzontale o verticale"
+        sezinstallationposition_values:
+          laterale: "Orizzontale"
+          a_soffitto: "Verticale"
+        sezinstallationposition_hint: "Specificare se si tratta di una porta orizzontale o verticale"
+      
+        spaceceilingdoor: "Cs - Distanza soffitto - porta"
+        spaceceilingdoor_hint: "Inserire la distanza verticale tra il soffitto e la parte superiore della porta"
+      
+        spaceinstallation: "Cp - Spazio orizzontale disponibile alla fine della porta"
+        spaceinstallation_hint: "Inserisci la distanza utile per l'installazione tra la porta e la fine del garage o un eventuale ostacolo dopo la porta"
+      
+        counterweighttype: "Tipo basculante"
+        counterweighttype_values:
+          debordante: "Debordante"
+          non_debordante: "Non debordante"
+          pieghevole: "Pieghevole"
+        counterweighttype_hint: "Specificare il tipo di porta basculante"
+      
+        pedestriandoor: "Presenza di porta pedonale"
+        pedestriandoor_values:
+          "si": "Si"
+          "no": "No"
+        pedestriandoor_hint: "Specificare se è presente una porta pedonale"
+      
+        cwinstallationposition: "Posizione del motore"
+        cwinstallationposition_values:
+          centrale: "Centrale"
+          laterale: "Laterale"
+        cwinstallationposition_hint: "Specificare la posizione di installazione del motore"
+      
+        freelight: "Ca - Luce libera fianco porta"
+        freelight_hint: "Inserire la larghezza utile per il braccio motore sul fianco della porta"
+      
+        suppanelheight: "Hb - Altezza del pannello superiore"
+        suppanelheight_hint: "Inserisci l'altezza del pannello superiore della porta pieghevole"
+      
+        outsideheight: "Hd - Altezza della parte debordate"
+        outsideheight_hint: "Inserisci l'altezza della parte di porta che deborda"
+      
+        rollupcapacity: "Peso della serranda"
+        rollupcapacity_values: 
+          "180": "180 Kg"
+          "200": "200 Kg"
+          "220": "220 Kg"
+        rollupcapacity_hint: "Inserire il peso della serranda da automatizzare"
+      
+        shaftdiameter: "Ds - Diametro dell'albero"
+        shaftdiameter_values:
+          "42": "42 mm"
+          "48": "48 mm"
+          "60": "60 mm"
+        shaftdiameter_hint: "Specificare il diametro dell'albero della serranda"
+      
+        pulleydiameter: "Dp - Diametro delle pulegge"
+        pulleydiameter_values:
+          "200": "200 mm"
+          "220": "220 mm"
+        pulleydiameter_hint: "Specificare il diametro delle pulegge della serranda"
+      
+        industrialdoortype: "Tipo di porta"
+        industrialdoortype_values:
+          a_libro: "A libro"
+          sezionale: "Sezionale"
+        industrialdoortype_hint: "Seleziona il tipo di porta"
+      
+        doornumber: "Numero di ante"
+        doornumber_values:
+          1_anta: "1 anta"
+          2_ante: "2 ante"
+        doornumber_hint: "Seleziona il numero di ante"
+      
+        panelwidth: "Larghezza del pannello"
+        panelwidth_hint: "Inserisci la larghezza del singolo pannello della porta a libro"
+      
+        panelheight: "Altezza del pannello"
+        panelheight_hint: "Inserisci l'altezza del singolo pannello della porta a libro"
+      
+        industrialdoorwidth: "Larghezza della porta"
+        industrialdoorwidth_hint: "Inserisci la larghezza della porta sezionale"
+      
+        industrialdoorheight: "Altezza della porta"
+        industrialdoorheight_hint: "Inserisci l'altezza della porta sezionale"
+      
+        shaftrpm: "Numero di giri dell'albero della porta"
+        shaftrpm_hint: "Inserisci il numero di giri totali dell'albero per l'apertura completa della porta"
+      
+        shaftheight: "Hs - Altezza dell'albero della porta"
+        shaftheight_hint: "Inserisci l'altezza da terra dell'albero della porta"
+      
+        singleaccess: "Num. varchi a senso unico (tessera di prossimità)"
+        singleaccess_hint: "Inserisci il numero di varchi a senso unico con comando tramite tessera di prossimità o con portachiavi a transponder"
+      
+        doubleaccess: "Num. varchi a doppio senso  (tessera di prossimità)"
+        doubleaccess_hint: "Inserire il numero di varchi a doppio senso con comando tramite tessera di prossimità o con portachiavi a transponder"
+      
+        doublecontrolaccess: "Num. dei varchi a doppio senso controllato (tessera di prossimità)"
+        doublecontrolaccess_hint: "Inserisci il numero di varchi a doppio senso con comando tramite tessera di prossimità o con portachiavi a transponder con controllo di accessi di direzione (anti-passback)"
+      
+        remotecontrol: "Varchi ad accesso radio (radiocomandi)"
+        remotecontrol_values:
+          "si": "Si"
+          "no": "No"
+        remotecontrol_hint: "Specifica se sono presenti varchi con comando tramite radiocomandi"
+      
+        passagenumber: "Numero dei varchi radio (radiocomandi)"
+        passagenumber_hint: "Inserisci il numero di varchi con comando radio (radiocomandi)"
+      
+        transponder: "Varchi ad accesso a mano libera"
+        transponder_values:
+          "si": "Si"
+          "no": "No"
+        transponder_hint: "Specifica se sono presenti varchi con comando a mano libera"
+
+        inttranspsingleaccess: "A senso unico interno"
+        inttranspsingleaccess_hint: "Inserire il numero di varchi a senso unico con ingresso in una zona al chiuso"
+      
+        inttranspdoubleaccess: "A doppio senso interno"
+        inttranspdoubleaccess_hint: "Inserire il numero di varchi a doppio senso con ingresso in una zona al chiuso"
+      
+        inttranspdoublecontrolaccess: "A doppio senso interno con accesso controllato"
+        inttranspdoublecontrolaccess_hint: "Inserire il numero di varchi a doppio senso con ingresso in una zona al chiuso, dove si vuole effettuare un controllo accessi di direzione (anti-passback)"
+      
+        exttranspsingleaccess: "A senso unico esterno"
+        exttranspsingleaccess_hint: "Inserire il numero di varchi a senso unico all'aperto"
+      
+        exttranspdoubleaccess: "A doppio senso esterno"
+        exttranspdoubleaccess_hint: "Inserire il numero di varchi a doppio senso all'aperto"
+      
+        exttranspdoublecontrolaccess: "A doppio senso esterno con accesso controllato"
+        exttranspdoublecontrolaccess_hint: "Inserire il numero di varchi a doppio senso all'aperto, dove si vuole effettuare un controllo accessi di direzione (anti-passback)"
+    
+        column10mt: "Dissuasori con cavo tra 0 e 10 m"
+        column10mt_hint: "Inserire il numero di dissuasori che richiedono un cavo lungo meno di 10 metri"
+      
+        column25mt: "Dissuasori con cavo tra 10 e 25 m"
+        column25mt_hint: "Inserire il numero di dissuasori che richiedono un cavo lungo tra 10 e 25 metri"
+      
+        column50mt: "Dissuasori con cavo tra 25 e 50 m"
+        column50mt_hint: "Inserire il numero di dissuasori che richiedono un cavo lungo tra 25 e 50 metri"
+        
+        question_image_hint: "Passa sopra l'immagine per ingrandire"
+        
+        increasecablemessage: "Si ricorda in fase di ordine dei prodotti di scrivere a fianco di ogni maggiorazione cavo la tipologia di STOPPY alla quale e' riferita"
+        centralizedmessage: "Attenzione: il configuratore fornisce un aiuto nella composizioni di impianti centralizzati, per impianti autonomi in stand-alone, utilizzare la selezione libera. La lunghezza totale del cavo che collega tutte le periferiche non può superare i 500 m."
+        barriersmessage: "Attenzione: il corretto bilanciamento della barriera scelta in relazione al passaggio utile previsto dipende dall'asta selezionata e dagli accessori installati. Verranno suggeriti gli articoli necessari. Nel caso un articolo suggerito non sia di Vs gradimento per deselezionarlo potrebbe essere necessario scegliere un'altra asta o un'altra barriera."
+        automaticdoorssmessage: "Possono essere installate solo in ambiente interno o protetto (grado IP X0)."
+        
+        not-viable-message:
+          only_lateral: "La larghezza del portone è maggiore di 3.6 m. Non è possibile fare un'installazione con un unico motore centrale su questa configurazione."
+          only_lateral_installation: "Non è possibile fare installazione centrale se ho solo operatori che richiedo il doppio motore. Sciegliere installazione laterale."
+          no_operator: "Non ci sono operatori che soddisfano la tua configurazione. Prova a cambiare le risposte alle domande."
+          passage_exceed: "Il numero massimo dei varchi gestiti e' 31."
+          distance_pillar_pivot_too_high: "La distanza della cerniera dal lato interno del pilastro dell'anta è troppo grande (> 25 mm)"
+          error:
+            no_selected_operator: "Non puoi completare la configurazione se non hai selezionato almeno un operatore."
+            no_selected_unlock: "Non è stato selezionato nessun sblocco."
+            no_selected_control_boards: "Non puoi completare una configurazione se non hai selezionato almeno un quadro di comando"
+            no_CA_arm_selected: "Per completare la configurazione devi selezionare almeno un prodotto tra CA1, CA2, CA1C, CA2C."
+            no_PH1_selected: "Per completare la configurazione devi selezionare CBA oppure CBAC."
+            no_PH2_selected: "Per completare la configurazione devi selezionare il prodotto CTA."
+            no_PH3_selected: "Per completare la configurazione devi selezionare BCP oppure BLP."
+            no_PH234_selected: "Per completare la configurazione devi selezionare il prodotto CTBP oppure CTA ed uno tra BLP o BCP."
+            no_min_configuration_bar: "Per completare la configurazione devi selezionare almeno un'asta."
+            no_min_configuration_accbar: "Per completare la configurazione devi selezionare almeno un supporto per asta."
+            no_min_configuration_bar_or_accbar: "Per completare la configurazione devi selezionare almeno un supporto per asta."
+            no_min_configuration_art: "Per completare la configurazione devi selezionare almeno un'articolazione."
+            no_min_configuration_extension_bar: "Per completare la configurazione devi selezionare anche la prolunga asta."
+            useful_passage_bigger_doorwidth: "Inserimento dati incorretto. Non e' possibile richiedere un passaggio utile maggiore del vano porta disponibile"
+            operator_smaller_increase_cable: "Il numero degli operatori selezionati non corrisponde al numero dei dissuasori inseriti."
+            glass_too_heavy: "Il peso dell'anta supera i 250 kg, quindi l'impianto non è realizzabile"
+            no_min_configuration_485_slim: "Per completare la configurazione devi selezionare i prodotti COMPASS 485 e COMPASS SLIM."
+            no_min_configuration_compass: "Per completare la configurazione devi selezionare uno tra i prodotti COMPASS SC USB, COMPASS SC 232 e COMPASS 232."
+            no_min_configuration_software: "Per completare la configurazione devi selezionare almeno un software."
+            no_selected_controlpanel: "Per completare la configurazione devi selezionare almeno un quadro di comando."
+            no_selected_rack: "Per completare la configurazione devi selezionare almeno una cremagliera."
+            insufficient_rack: "La quantita' selezionata della cremagliera non è sufficiente per una corretta configurazione."
+            no_selected_antenna: "Per completare la configurazione devi selezionare almeno un'antenna."
+            no_selected_transponder: "Per completare la configurazione devi selezionare almeno un transponder."
+            no_selected_controller: "Per completare la configurazione devi selezionare almeno un controller porta (VISTA SEL)."
+            must_add_more_perseo: "Il numero dei Pesrseo non è sufficiente per il numero dei dissuasori selezionati."
+            no_selected_rails: "Per completare la configurazione devi selezionare almeno un binario."
+            no_selected_brct: "Per completare la configurazione devi selezionare almeno un adattatore (BRCT)"
+            elettroserratura_missing: "Per completare la configurazione devi selezionare almeno un'elettroserratura"
+            cassa_fondazione_missing: "Per completare la configurazione devi selezionare almeno una cassa di fondazione"
+            no_selected_2nd_operator: "Non puoi completare la configurazione se non hai selezionato almeno due operatori."
+            no_selected_2nd_cassa_fondazione: "Non puoi completare la configurazione se non hai selezionato almeno due casse di fondazione."
+            incomplete_proposalconf_barriers: "Per completare l'impianto è necessario selezionare anche i seguenti prodotti: %{msg}"
+            no_selected_rubber_edge: "In presenza di STR/FLCP2/VENTIMIGLIA NS devi selezionare almeno un profilo in gomma."
+            
+      menu_item:
+        gate: "Cancello"
+        garden: "Giardino"
+      hints:
+        bid:
+          link: "Inserisci il link"
+        tech_info:
+          date: "Inserisci la data"
+          info: "Inserisci il contenuto"
+          title: "Inserisci il titolo"
+        user:
+          email: "Inserisci l'e-mail"
+          password: "Inserisci la password"
+          password_confirmation: "Inserisci la conferma password"
+          name: "Inserisci il tuo nome e cognome"
+          p_iva: "Inserisci la partita iva ( es: IT00000000000 )"
+          telephone: "Inserisci il telefono"
+          address: "Inserisci l'indirizzo"
+          cap: "Inserisci il cap"
+          city: "Inserisci il comune"
+          district: "Inserisci la provincia"
+          region: "Inserisci la regione"
+          nation: "Inserisci la nazione"
+          logo: "Inserisci un tuo logo"
+          company: "Inserisci la ragione sociale"
+          leo_expiry_date: "Questa è la data in cui scadrà Leonardo"
+          preferential_category: "Seleziona la tua categoria"
+        customer:
+          q: "Inserisci il nome del cliente o il numero di preventivo"
+          name: "Inserisci il nome del cliente"
+          address_one: "Inserisci l'indirizzo del cliente"
+          city: "Inserisci il comune del cliente"
+          district: "Inserisci la provincia del cliente"
+          region: "Inserisci la regione del cliente"
+          nation: "Inserisci la nazione del cliente"
+          zip: "Inserisci il codice di avviamento postale"
+          web_address: "Inserisci il sito web del cliente"
+          email: "Inserisci l'indirizzo email del cliente (necessario per inviare offerte via email)"
+          phone_number_office: "Inserisci il telefono principale del cliente"
+          phone_number_fax: "Inserisci il numero di fax del cliente"
+          display_name: "Cliente"
+          p_iva: "Inserisci la partita iva del cliente"
+        location:
+          name: "Inserisci il nome del cliente"
+          address: "Inserisci l'indirizzo del cliente"
+          city: "Inserisci il comune del cliente"
+          zip: "Inserisci il codice di avviamento postale"
+          email: "Inserisci l'indirizzo email del cliente (necessario per inviare offerte via email)"
+          phone_number: "Inserisci il telefono principale del cliente"
+          fax_number: "Inserisci il numero di fax del cliente"
+          display_name: "Ubicazione impianto"
+          description: "Inserisci l'ubicazione impianto"
+        installer:
+          name: "Inserisci il nome del cliente"
+          address: "Inserisci l'indirizzo del cliente"
+          city: "Inserisci il comune del cliente"
+          zip: "Inserisci il codice di avviamento postale"
+          email: "Inserisci l'indirizzo email del cliente"
+          phone_number: "Inserisci il telefono principale del cliente"
+          fax_number: "Inserisci il numero di fax del cliente"
+          display_name: "Ubicazione impianto"
+        service_center:
+          name: "Inserisci il nome del centro di manutenzione"
+          address: "Inserisci l'indirizzo del centro di manutenzione"
+          city: "Inserisci il comune del centro di manutenzione"
+          zip: "Inserisci il codice di avviamento postale"
+          email: "Inserisci l'indirizzo email del centro di manutenzione"
+          phone_number: "Inserisci il telefono principale del centro di manutenzione"
+          fax_number: "Inserisci il numero di fax del centro di manutenzione"
+          display_name: "Centro di manutenzione"
+        proposal_conf_line:
+          price: "Inserisci il prezzo"
+          description: "Inserisci la descrizione"
+          serial: "Inserisci la matricola del prodotto"
+        menu_item:
+          title: "Inserisci un titolo per l'oggetto"
+          item_type: "L'oggetto può essere un cancello o una decorazione del giardino"
+        picture:
+          file: "Carica un file immagine da inserire"
+          
+    survey:
+      question_0:
+        title: "Settori"
+        civil: "civile"
+        tertiary: "terziario"
+        industrial: "industriale"
+      question_1:
+        title: "Applicazioni"
+        electrical_plants: "impianti elettrici"
+        special_plants: "impianti speciali"
+        automation: "automazioni"
+        anti_theft: "antifurto"
+      question_2:
+        title: "Prodotti usati"
+        sliding_gates: "scorrevoli"
+        electro_swing_gates: "battenti elettromecc."
+        oildynamic_swing_gates: "battenti oleondinamici"
+        roller_shutter: "tapparelle"
+        road_barriers: "barriere stradali"
+        automatic_doors: "porte automatiche"
+        counterweight: "basculanti"
+        roll_up_doors: "serrande"
+        access_control: "controllo accessi"
+        rising_bolloards: "dissuasori passaggio"
+        park_management: "gestione parcheggio"
+      question_3:
+        title: "Automaz. anno"
+        until_10: "fino a 10"
+        until_20: "fino a 20"
+      question_4:
+        title: "Ass. tecnica"
+        trainig_courses: "corsi formazione"
+        commercial_initiatives: "iniziative commerciali"
+        mailing: "mailing"

@@ -1,5 +1,7 @@
 class OrganizationsController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :require_admin!
+
   
   # GET /organizationsa
   # GET /organizations.xml

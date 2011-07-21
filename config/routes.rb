@@ -1,11 +1,18 @@
 Dlocale::Application.routes.draw do
-  resources :locale_files
 
+  resources :locale_files do
+    member do
+      get "translate_form"
+      post "translate"
+    end
+  end
   resources :organizations
 
   get "home/index"
 
   devise_for :users
+  resources :users 
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -20,7 +27,7 @@ Dlocale::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-root :to => "home#index"
+  root :to => "home#index"
   # Sample resource route with options:
   #   resources :products do
   #     member do
