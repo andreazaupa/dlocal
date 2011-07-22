@@ -1,14 +1,20 @@
-%ul
-  -YAML.load_file(@locale_file.asset.path).each do |k,v|
-    %li=k
-    -if v.is_a? Hash
-      %ul
-        -v.each do |kk,vv|
-          %li=kk
-          -if vv.is_a? Hash
-            %ul
-            -vv.each do |kkk,vvv|
-              %li=kkk
+
+
+%table
+  %tr
+    %th
+      Identificativo
+    %th
+      =@locale_file.organization.locales
+    %th
+      =@locale_file.locale
+  -@yaml_from.each do |k,v|
+    %tr
+      %td.key= k
+      %td.text= v
+      %td.form=text_area_tag "ciao",@yaml_to[k],:width=>"100%"
+
+
           
 
     

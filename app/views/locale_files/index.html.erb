@@ -11,6 +11,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @locale_files.each do |locale_file| %>
@@ -20,9 +21,11 @@
     <td><%= locale_file.name %></td>
     <td><%= locale_file.locale %></td>
     <td><%= locale_file.organization.name if locale_file.organization %></td>
+    <td><%= link_to 'Translate', translate_form_locale_file_path(locale_file) %></td>
     <td><%= link_to 'Show', locale_file %></td>
     <td><%= link_to 'Edit', edit_locale_file_path(locale_file) %></td>
     <td><%= link_to 'Destroy', locale_file, :confirm => 'Are you sure?', :method => :delete %></td>
+     
   </tr>
 <% end %>
 </table>

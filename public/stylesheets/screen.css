@@ -713,6 +713,12 @@ body #header, body #footer {
   background: #555555;
 }
 /* line 54, ../../app/stylesheets/screen.sass */
+body #header #nav, body #footer #nav {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+/* line 59, ../../app/stylesheets/screen.sass */
 body #header #logo, body #footer #logo {
   float: left;
   display: block;
@@ -720,21 +726,21 @@ body #header #logo, body #footer #logo {
   height: 60px;
   color: white;
 }
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 65, ../../app/stylesheets/screen.sass */
 body #header #logo h1, body #footer #logo h1 {
   color: white;
   padding: 0px 20px;
   line-height: 60px;
   font-size: 30px;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 body #flash {
   width: 940px;
   display: block;
   position: fixed;
   top: 0;
 }
-/* line 71, ../../app/stylesheets/screen.sass */
+/* line 76, ../../app/stylesheets/screen.sass */
 body #sidebar {
   display: inline;
   float: left;
@@ -747,7 +753,7 @@ body #sidebar {
 * html body #sidebar {
   overflow-x: hidden;
 }
-/* line 77, ../../app/stylesheets/screen.sass */
+/* line 82, ../../app/stylesheets/screen.sass */
 body #content {
   display: block;
   min-height: 300px;

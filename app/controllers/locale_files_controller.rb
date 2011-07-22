@@ -13,6 +13,9 @@ class LocaleFilesController < ApplicationController
   
   def translate_form
    @locale_file=LocaleFile.find params[:id]
+   @locale_from=LocaleFile.where(:name=>@locale_file.name,:locale=>"it",:organization_id=>@locale_file.organization_id).first
+   @yaml_from= @locale_file.get_shallow_hash
+   @yaml_to=  @locale_from.get_shallow_hash
   end
   
   def translate

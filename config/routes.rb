@@ -9,10 +9,24 @@ Dlocale::Application.routes.draw do
   resources :organizations
 
   get "home/index"
+  # devise_for :users ,:path_prefix=>"devise"
+  devise_for :users, :skip => [:registrations, :sessions] do
+    # devise/registrations
+    get 'signup' => 'devise/registrations#new', :as => :new_user_registration
+    post 'signup' => 'devise/registrations#create', :as => :user_registration
+    get 'users/cancel' => 'devise/registrations#cancel', :as => :cancel_user_registration
+    get 'users/edit' => 'devise/registrations#edit', :as => :edit_user_registration
+    put 'users' => 'devise/registrations#update'
+    delete 'users/cancel' => 'devise/registrations#destroy'
 
-  devise_for :users
-  resources :users 
-  
+    # devise/sessions
+    get  'signin' =>  'devise/sessions#new', :as => :new_user_session
+    post 'signin' =>  'devise/sessions#create', :as => :user_session
+    get  'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+  # devise_for :users
+  resources  :users 
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -27,7 +41,7 @@ Dlocale::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  root :to => "home#index"
+ 
   # Sample resource route with options:
   #   resources :products do
   #     member do

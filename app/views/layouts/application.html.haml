@@ -14,11 +14,15 @@
     #header
       #logo
         %h1="D-Locales"
+      #nav=render :partial=>"layouts/nav" if current_user
     #container
       #flash
-        %p.notice= notice
-        %p.alert= alert
-      #content= yield 
-      #sidebar= yield :sidebar
-      
+        -if notice
+          %p.notice= notice
+        -if alert
+          %p.alert=alert
+      = yield
+       
+
+
    
