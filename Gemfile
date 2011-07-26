@@ -7,6 +7,7 @@ gem 'rails', '3.0.9'
 
  
 gem "haml"
+gem "mysql2", "0.2.6"
 gem "compass", ">= 0.11.1"
 gem "devise"
 gem "jquery-rails"
