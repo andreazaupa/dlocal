@@ -1,18 +1,19 @@
-
-
-%table
-  %tr
-    %th
-      Identificativo
-    %th
-      =@locale_file.organization.locales
-    %th
-      =@locale_file.locale
-  -@yaml_from.each do |k,v|
+/ =simple_form @locale_file,:url=>"translate" do |f|
+= form_for @locale_file, :as => :locale, :url =>translate_locale_file_url, :html => { :method=>:post,:class => "new_post", :id => "new_post" } do |f| 
+  %table
     %tr
-      %td.key= k
-      %td.text= v
-      %td.form=text_area_tag "ciao",@yaml_to[k],:width=>"100%"
+      %th
+        Identificativo
+      %th
+        =@locale_file.organization.locales
+      %th
+        =@locale_file.locale
+    -@yaml_from.each do |k,v|
+      %tr
+        %td.key= k
+        %td.text= raw v
+        %td.form= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"20",:cols=>"40"}
+    =f.submit
 
 
           

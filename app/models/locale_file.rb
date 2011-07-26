@@ -12,6 +12,26 @@ class LocaleFile < ActiveRecord::Base
    self.asset ? YAML.load_file(self.asset.path) : {}
   end
   
+  def save_shallow_hash_with_locale(shallow_hash)
+    loc_hash={}
+    shallow_hash.each do |k,v|
+      loc_hash["#{self.locale}.#{k}"]=v
+    end
+    self.save_shallow_hash loc_hash
+  end
+  
+  def save_shallow_hash(shallow_hash)
+    hash=self.class.to_deep_hash(shallow_hash)    
+    temp_file_name=File.join(Rails.root,"tmp","temp#{Time.now.to_s}#{rand}")
+    f=File.new(self.asset.path,"w")
+    f.write(hash.to_yaml)
+    f.close
+  end
+  
+  def save_hash(hash)
+  
+  end
+  
   def get_shallow_hash
    h=self.get_hash
    LocaleFile::to_shallow_hash(h[h.keys.first])
@@ -28,6 +48,11 @@ class LocaleFile < ActiveRecord::Base
        end
        shallow_hash
      end
+   end
+   # deep_merge by Stefan Rusterholz, see http://www.ruby-forum.com/topic/142809
+   def self.deep_merge!(hash1, hash2)
+     merger = proc { |key, v1, v2| Hash === v1 && Hash === v2 ? v1.merge(v2, &merger) : v2 }
+     hash1.merge!(hash2, &merger)
    end
    
    

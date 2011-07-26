@@ -11,6 +11,10 @@ gem "compass", ">= 0.11.1"
 gem "devise"
 gem "jquery-rails"
 gem "carrierwave"
+gem "simple_form"
+
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

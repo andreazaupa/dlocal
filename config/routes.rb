@@ -3,8 +3,10 @@ Dlocale::Application.routes.draw do
   resources :locale_files do
     member do
       get "translate_form"
-      post "translate"
+      # post "translate"
+        post "translate"
     end
+
   end
   resources :organizations
 
