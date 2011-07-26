@@ -1,5 +1,5 @@
 .nav      
-  =link_to "files","/locale_files",:class=>"button button_nav"
-  =link_to "organizations","/organizations",:class=>"button button_nav"
-  =link_to "USers","/users",:class=>"button button_nav"
-  =link_to "Logout" ,{:action=>"destroy", :controller=>"devise/sessions"}
+  =link_to "Lista File","/locale_files",:class=>"button button_nav"
+  =link_to "organizations","/organizations",:class=>"button button_nav" if current_user && current_user.admin?
+  =link_to "USers","/users",:class=>"button button_nav" if current_user && current_user.admin?
+  =link_to "Logout" ,{:action=>"destroy", :controller=>"devise/sessions"},:style=>"color:#fff" if current_user 

@@ -309,13 +309,31 @@ table tr td {
   height: 100%;
 }
 
-/* line 46, ../../app/stylesheets/screen.sass */
-form textarea {
+/* line 47, ../../app/stylesheets/screen.sass */
+table form textarea {
   width: 95%;
-  height: 95%;
+  height: auto;
 }
 
 /* line 51, ../../app/stylesheets/screen.sass */
+input, textarea {
+  padding: 9px;
+  border: solid 1px #e5e5e5;
+  outline: 0;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  width: 200px;
+  background: white;
+}
+
+/* line 60, ../../app/stylesheets/screen.sass */
+textarea {
+  width: 400px;
+  max-width: 400px;
+  height: 150px;
+  line-height: 150%;
+}
+
+/* line 68, ../../app/stylesheets/screen.sass */
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -634,7 +652,7 @@ body .removed {
   background: #990000;
   color: white;
 }
-/* line 56, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 body table {
   border: 2px solid black;
 }
@@ -716,14 +734,14 @@ body table tfoot th, body table tfoot td {
 body table tfoot th.even, body table tfoot th:nth-child(2n), body table tfoot td.even, body table tfoot td:nth-child(2n) {
   background-color: #dddddd;
 }
-/* line 62, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 body #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 64, ../../app/stylesheets/screen.sass */
+/* line 81, ../../app/stylesheets/screen.sass */
 body #header, body #footer {
   width: 100%;
   display: block;
@@ -731,13 +749,13 @@ body #header, body #footer {
   margin-bottom: 10px;
   background: #555555;
 }
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 87, ../../app/stylesheets/screen.sass */
 body #header #nav, body #footer #nav {
   float: right;
   margin-top: 10px;
   margin-right: 10px;
 }
-/* line 75, ../../app/stylesheets/screen.sass */
+/* line 92, ../../app/stylesheets/screen.sass */
 body #header #logo, body #footer #logo {
   float: left;
   display: block;
@@ -745,21 +763,21 @@ body #header #logo, body #footer #logo {
   height: 60px;
   color: white;
 }
-/* line 81, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 body #header #logo h1, body #footer #logo h1 {
   color: white;
   padding: 0px 20px;
   line-height: 60px;
   font-size: 30px;
 }
-/* line 87, ../../app/stylesheets/screen.sass */
+/* line 104, ../../app/stylesheets/screen.sass */
 body #flash {
   width: 940px;
   display: block;
   position: fixed;
   top: 0;
 }
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 109, ../../app/stylesheets/screen.sass */
 body #sidebar {
   display: inline;
   float: left;
@@ -772,7 +790,7 @@ body #sidebar {
 * html body #sidebar {
   overflow-x: hidden;
 }
-/* line 98, ../../app/stylesheets/screen.sass */
+/* line 115, ../../app/stylesheets/screen.sass */
 body #content {
   display: block;
   min-height: 300px;

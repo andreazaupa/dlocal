@@ -18,14 +18,14 @@
       %tr
         %th.key= k
         %th
-
-          =link_to "editor" , "#",{:onclick=>"CKEDITOR.replace( '#{k}' );return false;",:class=>"button"}
-          =link_to "close_editor" , "#",{:onclick=>"CKEDITOR.instances['#{k}'].destroy();return false;",:class=>"button"}
+          -if v.match /<\/?[^>]*>/
+            =link_to "editor" , "#",{:onclick=> "CKEDITOR.replace( '#{k}' );return false;",:class=>"button"}
+            =link_to "close_editor" , "#",{:onclick=>"CKEDITOR.instances['#{k}'].destroy();return false;",:class=>"button"}
 
          
       %tr
         %td.text= raw v
-        %td.form= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"18",:cols=>"60",:id=>"#{k}",:class=>"ckeditor_opt"}
+        %td.form= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"18",:cols=>"10",:id=>"#{k}",:class=>"ckeditor_opt"}
   =f.submit "Salva il file",:class=>"button"
 
 
