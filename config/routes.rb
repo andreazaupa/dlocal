@@ -8,7 +8,11 @@ Dlocale::Application.routes.draw do
     end
 
   end
-  resources :organizations
+  resources :organizations do
+    member do
+      get "get_zip"
+    end
+  end
 
   get "home/index"
   # devise_for :users ,:path_prefix=>"devise"

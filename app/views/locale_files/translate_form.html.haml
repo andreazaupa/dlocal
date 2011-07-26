@@ -1,19 +1,32 @@
-/ =simple_form @locale_file,:url=>"translate" do |f|
+.box
+  %h2
+    Traduzione File
+    =@locale_file.name
+    %strong=@locale_file.locale
+  %p
+    Istruzioni utente traduzione
+
 = form_for @locale_file, :as => :locale, :url =>translate_locale_file_url, :html => { :method=>:post,:class => "new_post", :id => "new_post" } do |f| 
+  =f.submit "Salva il file" ,:class=>"button"
   %table
     %tr
-      %th
-        Identificativo
       %th
         =@locale_file.organization.locales
       %th
         =@locale_file.locale
     -@yaml_from.each do |k,v|
       %tr
-        %td.key= k
+        %th.key= k
+        %th
+
+          =link_to "editor" , "#",{:onclick=>"CKEDITOR.replace( '#{k}' );return false;",:class=>"button"}
+          =link_to "close_editor" , "#",{:onclick=>"CKEDITOR.instances['#{k}'].destroy();return false;",:class=>"button"}
+
+         
+      %tr
         %td.text= raw v
-        %td.form= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"20",:cols=>"40"}
-    =f.submit
+        %td.form= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"18",:cols=>"60",:id=>"#{k}",:class=>"ckeditor_opt"}
+  =f.submit "Salva il file",:class=>"button"
 
 
           

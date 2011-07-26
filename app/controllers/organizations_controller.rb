@@ -12,6 +12,21 @@ class OrganizationsController < ApplicationController
       format.xml  { render :xml => @organizations }
     end
   end
+  
+  
+  def get_zip
+    @organization = Organization.find(params[:id])
+    t = Tempfile.new("some-weird-temp-file-basename-#{request.remote_ip}-#{rand}")
+    Zip::ZipOutputStream.open(t.path) do |zos|
+      @organization.locale_files.collect(&:asset).each do |asset|
+        zos.put_next_entry(File.basename(asset.path))
+        zos.write File.new(asset.path,"r").read
+        # zos.print IO.read(asset.path)
+      end
+    end
+    send_file t.path, :type => 'application/zip', :disposition => 'attachment', :filename => "locales_#{@organization.name}_#{Time.now.strftime("%Y%m%d")}.zip"
+    # t.close
+  end
 
   # GET /organizations/1
   # GET /organizations/1.xml

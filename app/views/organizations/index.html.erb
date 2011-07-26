@@ -7,6 +7,8 @@
     <th>Active</th>
     <th></th>
     <th></th>
+        
+    <th></th>
     <th></th>
   </tr>
 
@@ -15,6 +17,7 @@
     <td><%= organization.name %></td>
     <td><%= organization.locales %></td>
     <td><%= organization.active %></td>
+    <td><%= link_to 'Scarica Archivio', get_zip_organization_path(organization) %></td>
     <td><%= link_to 'Show', organization %></td>
     <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
     <td><%= link_to 'Destroy', organization, :confirm => 'Are you sure?', :method => :delete %></td>
