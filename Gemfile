@@ -13,6 +13,7 @@ gem "jquery-rails"
 gem "carrierwave"
 gem "simple_form"
 gem "zip"
+
 # gem 'ckeditor', '3.4.2.pre'
 
 
