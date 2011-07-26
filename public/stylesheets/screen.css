@@ -759,7 +759,7 @@ body #header #nav, body #footer #nav {
 body #header #logo, body #footer #logo {
   float: left;
   display: block;
-  width: 100px;
+  width: 200px;
   height: 60px;
   color: white;
 }
