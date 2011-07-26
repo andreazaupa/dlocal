@@ -5,7 +5,7 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+ 
 gem "haml"
 gem "compass", ">= 0.11.1"
 gem "devise"
@@ -27,6 +27,7 @@ gem "zip"
 # gem 'ruby-debug'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 group :development do
+  gem 'sqlite3'
   gem 'ruby-debug19'
   gem "rspec-rails", "~> 2.4"
   gem 'mocha'
