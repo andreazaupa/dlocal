@@ -47,29 +47,13 @@ namespace :configuration do
   desc "Create default database.yml"
   task :default_database_yml do
     file = <<-EOF
-    development:
-    adapter: mysql2
-    encoding: utf8
-    database: #{application}
-    pool: 12
-    username: db
-    password: dbcontrol
-
-    test:
-    adapter: mysql2
-    encoding: utf8
-    database: #{application}
-    pool: 5
-    username: db
-    password: dbcontrol
-
     production:
-    adapter: mysql2
-    encoding: utf8
-    database: #{application}
-    pool: 5
-    username: db
-    password: dbcontrol
+      adapter: mysql2
+      encoding: utf8
+      database: #{application}
+      pool: 5
+      username: db
+      password: dbcontrol
     EOF
     put file, "#{shared_path}/config/database.yml"
   end
@@ -79,6 +63,7 @@ namespace :configuration do
     ["database.yml"].each do |link|
       run "ln -nfs #{shared_path}/config/#{link} #{release_path}/config/#{link}"
     end
+     run "ln -nfs #{shared_path}/uploads #{release_path}/public/uploads"
   end
 
 end
