@@ -14,6 +14,7 @@ gem "jquery-rails"
 gem "carrierwave"
 gem "simple_form"
 gem "zip"
+gem "hoptoad_notifier"
 
 # gem 'ckeditor', '3.4.2.pre'
 
