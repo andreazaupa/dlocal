@@ -1,5 +1,16 @@
 class LocaleFilesController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :check_user_own_files!, :only => [:translate, :translate_form]
+ 
+  def check_user_own_files!
+    if !current_user.admin?
+      unless( params[:id] && (current_user.organization.locale_files.collect(&:id).include?(params[:id].to_i)) )
+        flash[:notice]="Non hai i permessi per questo file"
+        redirect_to(:action=>"index") 
+      end
+    end
+  end
+  
   # GET /locale_files
   # GET /locale_files.xml
   def index

@@ -193,6 +193,7 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333333;
   font-size: 75%;
+  background: #dddddd;
 }
 /* line 51, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -506,7 +507,7 @@ body .removed {
   background: #990000;
   color: white;
 }
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 34, ../../app/stylesheets/screen.sass */
 body table {
   border: 2px solid black;
 }
@@ -588,32 +589,42 @@ body table tfoot th, body table tfoot td {
 body table tfoot th.even, body table tfoot th:nth-child(2n), body table tfoot td.even, body table tfoot td:nth-child(2n) {
   background-color: #dddddd;
 }
-/* line 39, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 body #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  background: white;
+  -moz-box-shadow: 7px 7px #eeeeee;
+  -webkit-box-shadow: 7px 7px #eeeeee;
+  box-shadow: 7px 7px #eeeeee;
+  margin-bottom: 20px;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
+body #container .box {
+  padding: 10px;
+}
+/* line 53, ../../app/stylesheets/screen.sass */
 body #container #new_post form input textarea {
   width: 100%;
 }
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 55, ../../app/stylesheets/screen.sass */
 body #header, body #footer {
   width: 100%;
   display: block;
   height: 60px;
   margin-bottom: 10px;
+  border-bottom: 2px solid #999999;
   background: #555555;
 }
-/* line 51, ../../app/stylesheets/screen.sass */
+/* line 62, ../../app/stylesheets/screen.sass */
 body #header #nav, body #footer #nav {
   float: right;
   margin-top: 10px;
   margin-right: 10px;
 }
-/* line 56, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 body #header #logo, body #footer #logo {
   float: left;
   display: block;
@@ -621,21 +632,21 @@ body #header #logo, body #footer #logo {
   height: 60px;
   color: white;
 }
-/* line 62, ../../app/stylesheets/screen.sass */
+/* line 73, ../../app/stylesheets/screen.sass */
 body #header #logo h1, body #footer #logo h1 {
   color: white;
   padding: 0px 20px;
   line-height: 60px;
   font-size: 30px;
 }
-/* line 68, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 body #flash {
   width: 940px;
   display: block;
   position: fixed;
   top: 0;
 }
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 84, ../../app/stylesheets/screen.sass */
 body #sidebar {
   display: inline;
   float: left;
@@ -648,7 +659,7 @@ body #sidebar {
 * html body #sidebar {
   overflow-x: hidden;
 }
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 90, ../../app/stylesheets/screen.sass */
 body #content {
   display: block;
   min-height: 300px;
@@ -662,7 +673,7 @@ body #content {
   overflow-x: hidden;
 }
 
-/* line 89, ../../app/stylesheets/screen.sass */
+/* line 99, ../../app/stylesheets/screen.sass */
 a.button, button, .button {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -684,6 +695,7 @@ a.button, button, .button {
   background-color: #f5f5f5;
   border-color: #eeeeee #dedede #dedede #eeeeee;
   color: #565656;
+  margin: 4px;
 }
 /* line 7, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 a.button, button, .button {
@@ -714,32 +726,32 @@ a.button:hover, button:hover, .button:hover {
   color: #336699;
 }
 
-/* line 94, ../../app/stylesheets/screen.sass */
+/* line 105, ../../app/stylesheets/screen.sass */
 .button_nav {
   width: 100px;
   display: block;
 }
 
-/* line 100, ../../app/stylesheets/screen.sass */
+/* line 111, ../../app/stylesheets/screen.sass */
 table tr td {
   width: 50%;
   margin: 0;
 }
 
-/* line 104, ../../app/stylesheets/screen.sass */
+/* line 115, ../../app/stylesheets/screen.sass */
 .form {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 110, ../../app/stylesheets/screen.sass */
+/* line 121, ../../app/stylesheets/screen.sass */
 table form textarea {
   width: 95%;
   height: auto;
 }
 
-/* line 114, ../../app/stylesheets/screen.sass */
+/* line 125, ../../app/stylesheets/screen.sass */
 input, textarea {
   padding: 9px;
   border: solid 1px #e5e5e5;
@@ -748,24 +760,25 @@ input, textarea {
   background: white;
 }
 
-/* line 121, ../../app/stylesheets/screen.sass */
+/* line 132, ../../app/stylesheets/screen.sass */
 .flag_small {
   height: 16px;
   float: right;
+  padding: 4px;
 }
 
-/* line 124, ../../app/stylesheets/screen.sass */
+/* line 136, ../../app/stylesheets/screen.sass */
 .index_td {
   text-align: center;
 }
 
-/* line 127, ../../app/stylesheets/screen.sass */
+/* line 139, ../../app/stylesheets/screen.sass */
 .file_index {
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 132, ../../app/stylesheets/screen.sass */
+/* line 144, ../../app/stylesheets/screen.sass */
 .ckeditor_opt {
   width: 95%;
   max-width: 95%;
@@ -773,12 +786,31 @@ input, textarea {
   margin: 5px;
 }
 
-/* line 138, ../../app/stylesheets/screen.sass */
+/* line 150, ../../app/stylesheets/screen.sass */
+#table_container {
+  padding: 5px;
+  display: block;
+  width: 100%;
+}
+
+/* line 155, ../../app/stylesheets/screen.sass */
+.base_table {
+  margin-top: 10px;
+  border: 2px solid #333333;
+  overflow: hidden;
+}
+
+/* line 159, ../../app/stylesheets/screen.sass */
+td.text {
+  padding: 4px;
+}
+
+/* line 161, ../../app/stylesheets/screen.sass */
 th.key {
   color: #2892d2;
 }
 
-/* line 140, ../../app/stylesheets/screen.sass */
+/* line 163, ../../app/stylesheets/screen.sass */
 textarea {
   width: 450px;
   height: 150px;

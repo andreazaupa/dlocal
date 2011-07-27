@@ -30,6 +30,7 @@ body
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
+  background: #ddd
   table 
     $table-color: #7a98c6
     @include table-scaffolding
@@ -37,7 +38,16 @@ body
     @include outer-table-borders(2px)
     @include alternating-rows-and-columns($table-color, adjust-hue($table-color, -120deg), #222222) 
   #container
+    // padding: 10px
     +container
+    background: #fff
+    -moz-box-shadow: 7px 7px #eee
+    -webkit-box-shadow: 7px 7px #eee
+    box-shadow: 7px 7px #eee
+    margin-bottom: 20px
+    .box
+      padding: 10px
+
     #new_post
       form
         input textarea
@@ -47,6 +57,7 @@ body
     display: block
     height: 60px
     margin-bottom: 10px
+    border-bottom: 2px solid #999
     background: #555
     #nav
       float: right
@@ -85,11 +96,11 @@ body
     // true means it's the last column in the row
     +column($content-columns, true)
 
-
 a.button , button,.button
   +button-button
   +button-hover-colors
   +button-colors
+  margin: 4px
 
 .button_nav
   width: 100px
@@ -121,6 +132,7 @@ input, textarea
 .flag_small
   height: 16px
   float: right
+  padding: 4px
 .index_td
   text-align: center
 
@@ -135,6 +147,17 @@ input, textarea
   height: 100px
   margin: 5px
 
+#table_container
+  padding: 5px
+  display: block
+  width: 100%
+
+.base_table
+  margin-top: 10px
+  border: 2px solid #333333
+  overflow: hidden
+td.text
+  padding: 4px
 th.key
   color: #2892d2
 textarea 

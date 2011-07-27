@@ -30,10 +30,27 @@ CKEDITOR.editorConfig = function( config )
 	// 	{ name: 'tools', items : [ 'Maximize', 'ShowBlocks','-','About' ] }
 	// ];
 	// 
+	// config.toolbar_Develon =
+	//       [
+	//           ['Source','-','Preview','Templates'],
+	//           
+	//           ['Maximize','-','About'],
+	//          
+	//           //['Styles','Format'],
+	//           ['Format','Font','FontSize'],
+	//           ['TextColor','BGColor'],
+	//           ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+	//           ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+	//           ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+	//           ['Link','Unlink','Anchor'],
+	//           ['Image','Embed','Flash','Attachment','Table','HorizontalRule','Smiley','SpecialChar','PageBreak']
+	//       ];
 	
 	config.toolbar_Basic =
 	[ ['Source'],
-		['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','About']
+	  ['Cut','Copy','Paste','PasteText','PasteFromWord','SpecialChar'],
+	  // ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+		['Bold', 'Italic', 'TextColor', 'NumberedList', 'BulletedList']
 	];
 	config.toolbar = 'Basic';
 	config.enterMode = CKEDITOR.ENTER_BR;

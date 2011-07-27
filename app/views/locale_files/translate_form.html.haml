@@ -5,37 +5,44 @@
     %strong=@locale_file.locale
   %p
     Completa le traduzioni mancanti e salva il file.
-    %br
+    
     Nel caso di testo Markup è possibile utilizzare un editor visuale.
+  %p
+    %strong.red
+      %span{:style=>"color:red"}Attenzione: 
+      le stringe contenute tra %{...} sono variabili, se vengono trovate nella lingua originale vanno mantenute senza tradurle.
+      %br
+      a.e.: %{model} in italiano --> %{model} in inglese  
 
-= form_for @locale_file, :as => :locale, :url =>translate_locale_file_url, :html => { :method=>:post,:class => "new_post", :id => "new_post" } do |f| 
-  =f.submit "Salva il file" ,:class=>"button"
-  %table
-    %tr
-      %th
-        =@locale_file.organization.locales
-      %th
-        =@locale_file.locale
-    -@yaml_from.each do |k,v|
-      -id_k=k.split(".").join("_")
+  = form_for @locale_file, :as => :locale, :url =>translate_locale_file_url, :html => { :method=>:post,:class => "new_post", :id => "new_post" } do |f| 
+    =f.submit "Salva il file" ,:class=>"button"
+    %table{:class=>"base_table"}
       %tr
-        %th.key= k
         %th
-          -if v.match /<\/?[^>]*>/
-            =link_to "editor" , "#",{:onclick=> "var h=$('##{id_k}').height();CKEDITOR.replace( '#{id_k}',{height: h} );return false;",:class=>"button"}
-            =link_to "close_editor" , "#",{:onclick=>"CKEDITOR.instances['#{id_k}'].destroy();return false;",:class=>"button"}
-
+          =@locale_file.organization.locales
+        %th
+          =@locale_file.locale
+      -@yaml_from.each do |k,v|
+        -id_k=k.split(".").join("_")
+        %tr
+          %th.key= k
+          %th
          
-      %tr
-        %td.text= raw v
-        %td.form= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"18",:cols=>"10",:id=>"#{id_k}",:class=>"ckeditor_opt"}
-  =f.submit "Salva il file",:class=>"button"
+        %tr
+          %td.text= raw v
+          %td{:class=>"form #{'form_big' if v.size > 160 }"}= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"18",:cols=>"10",:id=>"#{id_k}",:class=>"ckeditor_opt"}
+        -if v.match /<\/?[^>]*>/
+          =#link_to "editor" , "#",{:onclick=> "var h=$('##{id_k}').height();CKEDITOR.replace( '#{id_k}',{height: h} );return false;",:class=>"button"}
+          =#link_to "close_editor" , "#",{:onclick=>"CKEDITOR.instances['#{id_k}'].destroy();return false;",:class=>"button"}
+          %script{:type=>"text/javascript"}
+            $(function() {
+            =raw "var h=$('##{id_k}').height();"
+            =raw "CKEDITOR.replace('#{id_k}',{height: h} );"
+            });
+    =f.submit "Salva il file",:class=>"button"
 
 
           
-%script
-  $('.form textarea').each(function(i,el) {
-  var h= $(this).parent().parent().find(".text").height();
-  $(this).css("height",h);
-  });
+
+
   

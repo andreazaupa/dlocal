@@ -32,7 +32,7 @@ Dlocale::Application.routes.draw do
   end
   # devise_for :users
   resources  :users 
-  root :to => "home#index"
+  root :to => "locale_files#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

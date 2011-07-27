@@ -14,43 +14,51 @@
       <th></th>
       <th></th>
     </tr>
-  <% @locale_files.each do |locale_file| %>
+    <% @locale_files.each do |locale_file| %>
     <tr>
       <td><%= link_to locale_file.asset,"#{locale_file.asset}" %></td>
       <td><%= locale_file.name %></td>
       <td><%= locale_file.locale %></td>
       <td><%= locale_file.organization.name if locale_file.organization %></td>
-       <td><%=  locale_file.updated_at.strftime("%d/%m/%Y %H:%M") %> </td>
+      <td><%=  locale_file.updated_at.strftime("%d/%m/%Y %H:%M") %> </td>
       <td><%= link_to 'Translate', translate_form_locale_file_path(locale_file) %></td>
       <td><%= link_to 'Show', locale_file %></td>
       <td><%= link_to 'Edit', edit_locale_file_path(locale_file) %></td>
       <td><%= link_to 'Destroy', locale_file, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
-  <% end %>
+    <% end %>
   </table>
 
-  <br />
+
 
 
 <%else%>
+  <div class="box">
+    <div class="title">
+      <h2> Lista file da tradurre</h2>
+    </div>
 
-<table class="file_index">
-  <tr>
-    <th>Identificativo File</th>
-    <th>Lingua</th>
-    <th>Data ultima modifica</th>
-    <th></th>
-  </tr>
-<% @locale_files.each do |locale_file| %>
-  <tr>
-    <td class="index_td"><%= locale_file.name %><%=flag_for(locale_file.locale)%></td>
-    <td class="index_td"><%= locale_file.locale %> </td>
-    <td class="index_td"><%= locale_file.updated_at.strftime("%d/%m/%Y %H:%M") %> </td>
-    <td><%= link_to 'Traduci', translate_form_locale_file_path(locale_file),:class=>"button" %></td>
-  </tr>
-<% end %>
-</table>
+
+    
+
+  <table class="file_index base_table">
+    <tr>
+      <th>Identificativo File</th>
+      <th>Lingua</th>
+      <th>Data ultima modifica</th>
+      <th></th>
+    </tr>
+    <% @locale_files.keep_if{|l| current_user.locales.blank? || current_user.locales.split(",").include?(l.locale.to_s) }.each do |locale_file| %>
+    <tr>
+      <td class="index_td"><%= locale_file.name %><%=flag_for(locale_file.locale)%></td>
+      <td class="index_td"><%= locale_file.locale %> </td>
+      <td class="index_td"><%= locale_file.updated_at.strftime("%d/%m/%Y-%H:%M") %> </td>
+      <td><%= link_to 'Traduci', translate_form_locale_file_path(locale_file),:class=>"button",:style=>"margin: 4px" %></td>
+    </tr>
+    <% end %>
+  </table>
+     </div>
 
 
 <%end%>
-  
+
