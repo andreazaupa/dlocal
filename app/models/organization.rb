@@ -10,6 +10,12 @@ class Organization < ActiveRecord::Base
       self.unzip_and_associate
     end
   end
+  
+  def checkout_and_associate
+    if git_uri.present?
+     #checkout only locales and associate files using grit
+    end
+  end
 
   def unzip_and_associate
     if asset.present?

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110721100608) do
+ActiveRecord::Schema.define(:version => 20110727082519) do
 
   create_table "locale_files", :force => true do |t|
     t.string   "original_file"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20110721100608) do
     t.string   "asset"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "git_uri"
   end
 
   create_table "users", :force => true do |t|
