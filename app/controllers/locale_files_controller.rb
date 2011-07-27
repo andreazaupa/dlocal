@@ -34,7 +34,7 @@ class LocaleFilesController < ApplicationController
         format.html # show.html.erb
       else
         flash[:notice]="Non trovo il file IT"
-        flash.keep
+       
         format.html{redirect_to :action=>:index}
       end
     end

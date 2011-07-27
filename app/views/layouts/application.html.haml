@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Dlocale
+    %title D-local by Develon
     =# stylesheet_link_tag :all
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
@@ -16,7 +16,7 @@
   %body
     #header
       #logo
-        %h1="D-Locales"
+        %h1="D-Local"
       #nav=render :partial=>"layouts/nav" if current_user
     #container
       #flash
@@ -25,6 +25,9 @@
         -if alert
           %p.alert=alert
       = yield
+    #footer
+      D-Local by  
+      =link_to "Develon" ,"http://www.develon.com"  
        
 
 

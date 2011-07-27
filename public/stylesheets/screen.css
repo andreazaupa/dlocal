@@ -610,7 +610,11 @@ body #container #new_post form input textarea {
   width: 100%;
 }
 /* line 55, ../../app/stylesheets/screen.sass */
-body #header, body #footer {
+body #footer {
+  padding: 10px;
+}
+/* line 57, ../../app/stylesheets/screen.sass */
+body #header {
   width: 100%;
   display: block;
   height: 60px;
@@ -618,28 +622,28 @@ body #header, body #footer {
   border-bottom: 2px solid #999999;
   background: #555555;
 }
-/* line 62, ../../app/stylesheets/screen.sass */
-body #header #nav, body #footer #nav {
+/* line 64, ../../app/stylesheets/screen.sass */
+body #header #nav {
   float: right;
   margin-top: 10px;
   margin-right: 10px;
 }
-/* line 67, ../../app/stylesheets/screen.sass */
-body #header #logo, body #footer #logo {
+/* line 69, ../../app/stylesheets/screen.sass */
+body #header #logo {
   float: left;
   display: block;
   width: 200px;
   height: 60px;
   color: white;
 }
-/* line 73, ../../app/stylesheets/screen.sass */
-body #header #logo h1, body #footer #logo h1 {
+/* line 75, ../../app/stylesheets/screen.sass */
+body #header #logo h1 {
   color: white;
   padding: 0px 20px;
   line-height: 60px;
   font-size: 30px;
 }
-/* line 80, ../../app/stylesheets/screen.sass */
+/* line 82, ../../app/stylesheets/screen.sass */
 body a.button, body button, body .button {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -691,91 +695,91 @@ body a.button:hover, body button:hover, body .button:hover {
   border-color: #d2f1ff #c2e1ef #c2e1ef #d2f1ff;
   color: #336699;
 }
-/* line 86, ../../app/stylesheets/screen.sass */
+/* line 88, ../../app/stylesheets/screen.sass */
 body .button_nav {
   width: 100px;
   display: block;
 }
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 94, ../../app/stylesheets/screen.sass */
 body table tr td {
-  width: 50%;
+  width: 47%;
   margin: 0;
 }
-/* line 96, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 body .form {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 102, ../../app/stylesheets/screen.sass */
+/* line 104, ../../app/stylesheets/screen.sass */
 body table form textarea {
   width: 95%;
   height: auto;
 }
-/* line 106, ../../app/stylesheets/screen.sass */
+/* line 108, ../../app/stylesheets/screen.sass */
 body input, body textarea {
-  padding: 9px;
+  padding: 8px;
   border: solid 1px #e5e5e5;
   outline: 0;
   font: normal 13px/100% Verdana, Tahoma, sans-serif;
   background: white;
 }
-/* line 113, ../../app/stylesheets/screen.sass */
+/* line 115, ../../app/stylesheets/screen.sass */
 body .flag_small {
   height: 16px;
   float: right;
   padding: 4px;
 }
-/* line 117, ../../app/stylesheets/screen.sass */
+/* line 119, ../../app/stylesheets/screen.sass */
 body .index_td {
   text-align: center;
 }
-/* line 120, ../../app/stylesheets/screen.sass */
+/* line 122, ../../app/stylesheets/screen.sass */
 body .file_index {
   font-size: 14px;
   font-weight: bold;
 }
-/* line 125, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 body .ckeditor_opt {
   width: 95%;
   max-width: 95%;
   height: 100px;
   margin: 5px;
 }
-/* line 131, ../../app/stylesheets/screen.sass */
+/* line 133, ../../app/stylesheets/screen.sass */
 body #table_container {
   padding: 5px;
   display: block;
   width: 100%;
 }
-/* line 136, ../../app/stylesheets/screen.sass */
+/* line 138, ../../app/stylesheets/screen.sass */
 body .base_table {
   margin-top: 10px;
   border: 2px solid #333333;
   overflow: hidden;
 }
-/* line 140, ../../app/stylesheets/screen.sass */
+/* line 142, ../../app/stylesheets/screen.sass */
 body td.text {
   padding: 4px;
 }
-/* line 142, ../../app/stylesheets/screen.sass */
+/* line 144, ../../app/stylesheets/screen.sass */
 body th.key {
   color: #2892d2;
 }
-/* line 144, ../../app/stylesheets/screen.sass */
+/* line 146, ../../app/stylesheets/screen.sass */
 body textarea {
   width: 450px;
   height: 150px;
   line-height: 150%;
 }
-/* line 149, ../../app/stylesheets/screen.sass */
+/* line 151, ../../app/stylesheets/screen.sass */
 body #flash {
   width: 940px;
   display: block;
   position: fixed;
-  top: 0;
+  top: 10px;
 }
-/* line 154, ../../app/stylesheets/screen.sass */
+/* line 156, ../../app/stylesheets/screen.sass */
 body #sidebar {
   display: inline;
   float: left;
@@ -788,7 +792,7 @@ body #sidebar {
 * html body #sidebar {
   overflow-x: hidden;
 }
-/* line 160, ../../app/stylesheets/screen.sass */
+/* line 162, ../../app/stylesheets/screen.sass */
 body #content {
   display: block;
   min-height: 300px;

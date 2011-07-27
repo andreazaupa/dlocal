@@ -21,14 +21,9 @@ class OrganizationsController < ApplicationController
       @organization.locale_files.collect(&:asset).each do |asset|
         zos.put_next_entry(File.basename(asset.path))
         zos.write File.new(asset.path,"r").read
-        # zos.print IO.read(asset.path)
       end
     end
-    
- 
     send_data t.read, :type => 'application/zip',  :filename => "locales_#{@organization.name}_#{Time.now.strftime("%Y%m%d")}.zip"
-    # send_file t.path, :type => 'application/zip', :disposition => 'attachment', :filename => "locales_#{@organization.name}_#{Time.now.strftime("%Y%m%d")}.zip"
-    # t.close
   end
 
   # GET /organizations/1

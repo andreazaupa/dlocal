@@ -21,15 +21,16 @@
      <%= f.file_field :asset %>
   </div>
   
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :locales %><br />
     <%= f.text_field :locales %>
-  </div>
-  <div class="field">
-    <%= f.label :active %><br />
-    <%= f.check_box :active %>
-  </div>
+  </div> -->
+  <%= f.hidden_field :locales, "it" %>
+  <!-- <div class="field">
+     <%= f.label :active %><br />
+     <%= f.check_box :active %>
+   </div> -->
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit ,:class=>"button"%>
   </div>
 <% end %>
