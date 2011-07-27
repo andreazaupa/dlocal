@@ -1,35 +1,56 @@
+<% if current_user.admin? %>
+  <h1>Listing locale_files</h1>
+  <%= link_to 'New Locale file', new_locale_file_path ,:class=>"button"%>
+  <br />
+  <table>
+    <tr>
+      <th>File</th>
+      <th>Name</th>
+      <th>Locale</th>
+      <th>Organization</th>
+      <th> Ultima modifica </th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  <% @locale_files.each do |locale_file| %>
+    <tr>
+      <td><%= link_to locale_file.asset,"#{locale_file.asset}" %></td>
+      <td><%= locale_file.name %></td>
+      <td><%= locale_file.locale %></td>
+      <td><%= locale_file.organization.name if locale_file.organization %></td>
+       <td><%=  locale_file.updated_at.strftime("%d/%m/%Y %H:%M") %> </td>
+      <td><%= link_to 'Translate', translate_form_locale_file_path(locale_file) %></td>
+      <td><%= link_to 'Show', locale_file %></td>
+      <td><%= link_to 'Edit', edit_locale_file_path(locale_file) %></td>
+      <td><%= link_to 'Destroy', locale_file, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
 
-<h1>Listing locale_files</h1>
+  <br />
 
-<table>
+
+<%else%>
+
+<table class="file_index">
   <tr>
-    <th>File</th>
-    <th>Name</th>
-    <th>Locale</th>
-
-    <th>Organization</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Identificativo File</th>
+    <th>Lingua</th>
+    <th>Data ultima modifica</th>
     <th></th>
   </tr>
-
 <% @locale_files.each do |locale_file| %>
   <tr>
-
-    <td><%= link_to locale_file.asset,"#{locale_file.asset}" %></td>
-    <td><%= locale_file.name %></td>
-    <td><%= locale_file.locale %></td>
-    <td><%= locale_file.organization.name if locale_file.organization %></td>
-    <td><%= link_to 'Translate', translate_form_locale_file_path(locale_file) %></td>
-    <td><%= link_to 'Show', locale_file %></td>
-    <td><%= link_to 'Edit', edit_locale_file_path(locale_file) %></td>
-    <td><%= link_to 'Destroy', locale_file, :confirm => 'Are you sure?', :method => :delete %></td>
-     
+    <td class="index_td"><%= locale_file.name %><%=flag_for(locale_file.locale)%></td>
+    <td class="index_td"><%= locale_file.locale %> </td>
+    <td class="index_td"><%= locale_file.updated_at.strftime("%d/%m/%Y %H:%M") %> </td>
+    <td><%= link_to 'Traduci', translate_form_locale_file_path(locale_file),:class=>"button" %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Locale file', new_locale_file_path %>
+<%end%>
+  

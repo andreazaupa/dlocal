@@ -749,6 +749,23 @@ input, textarea {
 }
 
 /* line 121, ../../app/stylesheets/screen.sass */
+.flag_small {
+  height: 16px;
+  float: right;
+}
+
+/* line 124, ../../app/stylesheets/screen.sass */
+.index_td {
+  text-align: center;
+}
+
+/* line 127, ../../app/stylesheets/screen.sass */
+.file_index {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 132, ../../app/stylesheets/screen.sass */
 .ckeditor_opt {
   width: 95%;
   max-width: 95%;
@@ -756,12 +773,12 @@ input, textarea {
   margin: 5px;
 }
 
-/* line 127, ../../app/stylesheets/screen.sass */
+/* line 138, ../../app/stylesheets/screen.sass */
 th.key {
   color: #2892d2;
 }
 
-/* line 129, ../../app/stylesheets/screen.sass */
+/* line 140, ../../app/stylesheets/screen.sass */
 textarea {
   width: 450px;
   height: 150px;

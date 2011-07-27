@@ -4,7 +4,7 @@ class LocaleFilesController < ApplicationController
   # GET /locale_files.xml
   def index
     @locale_files = LocaleFile.all if current_user.role=="admin"
-    @locale_files = current_user.organization.locale_files unless  current_user.role=="admin"
+    @locale_files = current_user.organization.locale_files.order(:name=>"ASC") unless  current_user.role=="admin"
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @locale_files }
@@ -34,11 +34,9 @@ class LocaleFilesController < ApplicationController
     @yaml=LocaleFile.to_deep_hash(params[:translate_file])
     @locale_file=LocaleFile.find params[:id]
     @locale_file.save_shallow_hash_with_locale(params[:translate_file])
-    # @locale_from=LocaleFile.where(:name=>@locale_file.name,:locale=>"it",:organization_id=>@locale_file.organization_id).first
-    #    @yaml_from= @locale_from.get_shallow_hash
-    #    @yaml_to=  @locale_file.get_shallow_hash
     @locale_files = LocaleFile.all if current_user.role=="admin"
-    @locale_files = current_user.organization.locale_files unless  current_user.role=="admin"
+    @locale_files = current_user.organization.locale_files.order(:name=>"ASC") unless  current_user.role=="admin"
+    @locale_file.touch
     flash[:notice]="File #{@locale_file.name} salvato con successo"
     render :action=>:index
   end

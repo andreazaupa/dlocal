@@ -4,7 +4,9 @@
     =@locale_file.name
     %strong=@locale_file.locale
   %p
-    Istruzioni utente traduzione
+    Completa le traduzioni mancanti e salva il file.
+    %br
+    Nel caso di testo Markup è possibile utilizzare un editor visuale.
 
 = form_for @locale_file, :as => :locale, :url =>translate_locale_file_url, :html => { :method=>:post,:class => "new_post", :id => "new_post" } do |f| 
   =f.submit "Salva il file" ,:class=>"button"
