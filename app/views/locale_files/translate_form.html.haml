@@ -30,5 +30,10 @@
 
 
           
-
-    
+%script
+  $('.form textarea').each(function(i,el) {
+  var h= el.parent().parent().find(".text").height();
+  el.css("height",h);
+  alert(el);
+  });
+  

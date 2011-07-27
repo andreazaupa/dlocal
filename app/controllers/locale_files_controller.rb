@@ -10,14 +10,26 @@ class LocaleFilesController < ApplicationController
       format.xml  { render :xml => @locale_files }
     end
   end
-  
+
   def translate_form
-   @locale_file=LocaleFile.find params[:id]
-   @locale_from=LocaleFile.where(:name=>@locale_file.name,:locale=>"it",:organization_id=>@locale_file.organization_id).first
-   @yaml_from= @locale_from.get_shallow_hash
-   @yaml_to=  @locale_file.get_shallow_hash
+    @locale_file=LocaleFile.find params[:id]
+    @locale_from=LocaleFile.where(:name=>@locale_file.name,:locale=>"it",:organization_id=>@locale_file.organization_id).first
+    if @locale_from
+      @yaml_from= @locale_from.get_shallow_hash
+      @yaml_to=  @locale_file.get_shallow_hash
+    end
+    respond_to do |format|
+      if @locale_from
+        format.html # show.html.erb
+      else
+        flash[:notice]="Non trovo il file IT"
+        flash.keep
+        format.html{redirect_to :action=>:index}
+      end
+    end
+
   end
-  
+
   def translate
     @yaml=LocaleFile.to_deep_hash(params[:translate_file])
     @locale_file=LocaleFile.find params[:id]
