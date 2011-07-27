@@ -45,7 +45,7 @@ CKEDITOR.editorConfig = function( config )
 	
 	config.toolbar_Basic =
 	[ ['Source'],
-	  ['Cut','Copy','Paste','PasteText','PasteFromWord','SpecialChar'],
+	  ['Cut','Copy','PasteText','SpecialChar'],
 	 
 		['Bold', 'Italic', 'TextColor', 'NumberedList', 'BulletedList']
 	];
