@@ -1,11 +1,8 @@
-﻿/*
-Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
-*/
+﻿
 
 CKEDITOR.editorConfig = function( config )
 {
-	// Define changes to default configuration here. For example:
+
 	config.language = 'it';
 
 	
@@ -35,7 +32,7 @@ CKEDITOR.editorConfig = function( config )
 	//           ['Source','-','Preview','Templates'],
 	//           
 	//           ['Maximize','-','About'],
-	//          
+	//           // ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
 	//           //['Styles','Format'],
 	//           ['Format','Font','FontSize'],
 	//           ['TextColor','BGColor'],
@@ -49,12 +46,11 @@ CKEDITOR.editorConfig = function( config )
 	config.toolbar_Basic =
 	[ ['Source'],
 	  ['Cut','Copy','Paste','PasteText','PasteFromWord','SpecialChar'],
-	  // ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+	 
 		['Bold', 'Italic', 'TextColor', 'NumberedList', 'BulletedList']
 	];
 	config.toolbar = 'Basic';
 	config.enterMode = CKEDITOR.ENTER_BR;
 	config.theme = 'default';
-	// config.skin = 'v2';
-	// config.uiColor = '#AADC6E';
+
 };
