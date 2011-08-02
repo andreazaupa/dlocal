@@ -18,6 +18,8 @@ set :use_sudo, false
 
 set :deploy_to, "/space/apache/htdocs/#{application}"
 
+
+
 namespace :deploy do 
   task :start do ; end
   task :stop do ; end

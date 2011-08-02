@@ -11,3 +11,9 @@ $(function() {
 
 });
 
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		controlNav:false,
+		 directionNav:false
+	});
+});

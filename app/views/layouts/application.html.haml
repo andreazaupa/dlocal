@@ -10,14 +10,20 @@
     = javascript_include_tag :defaults
     = javascript_include_tag "/ckeditor/ckeditor.js"
     = javascript_include_tag "/ckeditor/adapters/jquery.js"
+    = javascript_include_tag "/nivo-slider/jquery.nivo.slider.pack.js"
 
     = csrf_meta_tag
     
   %body
     #header
       #logo
-        %h1="D-Local"
+       
+        %h1
+          ="D-Local"
+        
       #nav=render :partial=>"layouts/nav" if current_user
+      
+      
     #container
       #flash
         -if notice
@@ -26,8 +32,10 @@
           %p.alert=alert
       = yield
     #footer
+      =render :partial=>"/layouts/slider"
       D-Local by  
       =link_to "Develon" ,"http://www.develon.com"  
+     
        
 
 
