@@ -9,8 +9,12 @@ Dlocale::Application.routes.draw do
 
   end
   resources :organizations do
+    collection do 
+    get "new_from_git"
+    end
     member do
       get "get_zip"
+      
     end
   end
 

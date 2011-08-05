@@ -13,6 +13,15 @@ class OrganizationsController < ApplicationController
     end
   end
   
+  def new_from_git
+     @organization = Organization.new
+
+      respond_to do |format|
+        format.html # new.html.erb
+        format.xml  { render :xml => @organization }
+      end
+  end
+  
   
   def get_zip
     @organization = Organization.find(params[:id])
