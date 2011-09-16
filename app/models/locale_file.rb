@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'carrierwave/orm/activerecord'
 class LocaleFile < ActiveRecord::Base
   mount_uploader :asset , AssetUploader
@@ -11,8 +12,8 @@ class LocaleFile < ActiveRecord::Base
   def get_hash
     aux={}
     if self.asset
-      f=File.new(self.asset.path,"r:UTF-8")
-      aux=YAML.load_file(f)
+      #f=File.new(self.asset.path,"r:UTF-8")
+      aux=YAML.load_file(self.asset.path)
     end
    aux
   end
