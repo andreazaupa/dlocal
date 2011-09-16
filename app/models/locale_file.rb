@@ -13,7 +13,8 @@ class LocaleFile < ActiveRecord::Base
     aux={}
     if self.asset
       #f=File.new(self.asset.path,"r:UTF-8")
-      aux=YAML.load_file(self.asset.path)
+      str=File.new(self.asset.path,"r:UTF-8")
+      aux=YAML.load(str)
     end
    aux
   end
