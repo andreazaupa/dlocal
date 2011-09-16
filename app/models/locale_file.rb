@@ -11,7 +11,7 @@ class LocaleFile < ActiveRecord::Base
   def get_hash
     aux={}
     if self.asset
-      f=File.new(self.asset.path,"w:UTF-8")
+      f=File.new(self.asset.path,"r:UTF-8")
       aux=YAML.load_file(f)
     end
    aux
