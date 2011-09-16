@@ -1,4 +1,4 @@
-# encoding: utf-8
+# -*- encoding : utf-8 -*-
 require 'carrierwave/orm/activerecord'
 class LocaleFile < ActiveRecord::Base
   mount_uploader :asset , AssetUploader

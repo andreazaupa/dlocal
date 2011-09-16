@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 HoptoadNotifier.configure do |config|
   config.api_key = 'e02080324fc912965015d7a66deefdfb'
   config.host    = 'errors.lab.develon.com'

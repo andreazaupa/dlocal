@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Organization < ActiveRecord::Base
   has_many :locale_files
   has_many :users

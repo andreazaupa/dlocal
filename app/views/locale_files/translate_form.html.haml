@@ -31,7 +31,7 @@
         %tr
           %td.text= raw v
           %td{:class=>"form #{'form_big' if v.size > 160 }"}= text_area_tag "translate_file[#{k}]",@yaml_to[k],{:rows=>"18",:cols=>"10",:id=>"#{id_k}",:class=>"ckeditor_opt"}
-        -if v.match /<\/?[^>]*>/
+        -if v.match  /<\/?[^>]*>/
           =#link_to "editor" , "#",{:onclick=> "var h=$('##{id_k}').height();CKEDITOR.replace( '#{id_k}',{height: h} );return false;",:class=>"button"}
           =#link_to "close_editor" , "#",{:onclick=>"CKEDITOR.instances['#{id_k}'].destroy();return false;",:class=>"button"}
           %script{:type=>"text/javascript"}

@@ -1,4 +1,4 @@
-# encoding: utf-8
+# -*- encoding : utf-8 -*-
 class LocaleFilesController < ApplicationController
   before_filter :authenticate_user!
   before_filter :check_user_own_files!, :only => [:translate, :translate_form]

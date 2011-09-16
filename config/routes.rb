@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Dlocale::Application.routes.draw do
 
   resources :locale_files do

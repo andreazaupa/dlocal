@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module LocaleFilesHelper
 
   def hash_to_form(h1,h2,level=0)

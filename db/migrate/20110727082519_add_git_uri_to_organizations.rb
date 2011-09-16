@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddGitUriToOrganizations < ActiveRecord::Migration
   def self.up
     add_column :organizations, :git_uri, :string

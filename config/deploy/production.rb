@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 puts '***DEPLOY TO PRODUCTION SERVER***'
 
 puts '*** Deploying to: PRODUCTION environment ***'

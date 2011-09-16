@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateLocaleFiles < ActiveRecord::Migration
   def self.up
     create_table :locale_files do |t|

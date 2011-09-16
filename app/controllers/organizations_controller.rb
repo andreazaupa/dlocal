@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class OrganizationsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :require_admin!
