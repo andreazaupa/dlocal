@@ -9,7 +9,12 @@ class LocaleFile < ActiveRecord::Base
 
 
   def get_hash
-    self.asset ? YAML.load_file(self.asset.path) : {}
+    aux={}
+    if self.asset
+      f=File.new(self.asset.path,"w:UTF-8")
+      aux=YAML.load_file(f)
+    end
+   aux
   end
 
   def save_shallow_hash_with_locale(shallow_hash)
@@ -24,7 +29,7 @@ class LocaleFile < ActiveRecord::Base
     hash=self.class.to_deep_hash(shallow_hash) 
     hash=self.class.deep_stringify_keys(hash)   
     temp_file_name=File.join(Rails.root,"tmp","temp#{Time.now.to_s}#{rand}")
-    f=File.new(self.asset.path,"w")
+    f=File.new(self.asset.path,"w:UTF-8")
     f.write(hash.to_yaml)
     f.close
   end
