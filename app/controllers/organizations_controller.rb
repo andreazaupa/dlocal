@@ -31,7 +31,7 @@ class OrganizationsController < ApplicationController
       @organization.locale_files.collect(&:asset).each do |asset|
         name=File.basename(asset.path)
         if name.include? "base."
-          name.gsub("base.","")
+          name=name.gsub("base.","")
         end
         zos.put_next_entry(name)
         zos.write File.new(asset.path,"r").read
