@@ -29,7 +29,11 @@ class OrganizationsController < ApplicationController
     t = Tempfile.new("some-weird-temp-file-basename-#{request.remote_ip}-#{rand}")
     Zip::ZipOutputStream.open(t.path) do |zos|
       @organization.locale_files.collect(&:asset).each do |asset|
-        zos.put_next_entry(File.basename(asset.path))
+        name=File.basename(asset.path)
+        if name.include? "base."
+          name.gsub("base.","")
+        end
+        zos.put_next_entry(name)
         zos.write File.new(asset.path,"r").read
       end
     end
