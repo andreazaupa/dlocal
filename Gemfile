@@ -7,14 +7,14 @@ gem 'rails', '3.0.19'
 
 
 gem "haml"
-# gem "mysql2", "0.2.6"
+ gem "mysql2", "0.2.6"
 gem "compass", ">= 0.11.1"
 gem "devise"
 gem "jquery-rails"
 gem "carrierwave"
 gem "simple_form"
 gem "zip"
-
+# gem "activerecord-mysql2-adapter"
 gem "hoptoad_notifier"
 
 # gem 'ckeditor', '3.4.2.pre'

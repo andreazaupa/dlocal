@@ -78,6 +78,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     mocha (0.9.12)
+    mysql2 (0.2.6)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -160,6 +161,7 @@ DEPENDENCIES
   hoptoad_notifier
   jquery-rails
   mocha
+  mysql2 (= 0.2.6)
   rails (= 3.0.19)
   rspec-rails (~> 2.4)
   ruby-debug19
