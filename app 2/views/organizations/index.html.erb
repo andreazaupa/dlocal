@@ -1,0 +1,31 @@
+<h1>Listing organizations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Locales</th>
+    <th>Active</th>
+    <th></th>
+    <th></th>
+        
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organizations.each do |organization| %>
+  <tr>
+    <td><%= organization.name %></td>
+    <td><%= organization.locales %></td>
+    <td><%= organization.active %></td>
+    <td><%= link_to 'Scarica Archivio', get_zip_organization_path(organization) %></td>
+    <td><%= link_to 'Show', organization %></td>
+    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+    <td><%= link_to 'Destroy', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organization', new_organization_path ,:class=>"button" %>
+<%= link_to 'New Organization from git', new_from_git_organizations_path ,:class=>"button" %>
