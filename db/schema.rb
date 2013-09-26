@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110727104927) do
+ActiveRecord::Schema.define(:version => 2010727104927) do
 
   create_table "locale_files", :force => true do |t|
     t.string   "original_file"
